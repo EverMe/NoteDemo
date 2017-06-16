@@ -1,0 +1,647 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		186ABE611EC94C9B000BC9C4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 186ABE601EC94C9B000BC9C4 /* main.m */; };
+		186ABE641EC94C9B000BC9C4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 186ABE631EC94C9B000BC9C4 /* AppDelegate.m */; };
+		186ABE671EC94C9B000BC9C4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 186ABE661EC94C9B000BC9C4 /* ViewController.m */; };
+		186ABE6A1EC94C9B000BC9C4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 186ABE681EC94C9B000BC9C4 /* Main.storyboard */; };
+		186ABE6C1EC94C9B000BC9C4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 186ABE6B1EC94C9B000BC9C4 /* Assets.xcassets */; };
+		186ABE6F1EC94C9B000BC9C4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 186ABE6D1EC94C9B000BC9C4 /* LaunchScreen.storyboard */; };
+		186ABE7A1EC94C9B000BC9C4 /* SYWebVoiceTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 186ABE791EC94C9B000BC9C4 /* SYWebVoiceTests.m */; };
+		186ABE851EC94C9B000BC9C4 /* SYWebVoiceUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 186ABE841EC94C9B000BC9C4 /* SYWebVoiceUITests.m */; };
+		186ABE951EC9515D000BC9C4 /* SYWebVoiceManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 186ABE941EC9515D000BC9C4 /* SYWebVoiceManager.m */; };
+		186ABE981EC95181000BC9C4 /* SYWebVoiceDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = 186ABE971EC95181000BC9C4 /* SYWebVoiceDownloader.m */; };
+		186ABE9B1EC9533E000BC9C4 /* SYWebVoiceCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 186ABE9A1EC9533E000BC9C4 /* SYWebVoiceCache.m */; };
+		186ABE9E1EC95375000BC9C4 /* SYWebVoiceDownloaderOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 186ABE9D1EC95375000BC9C4 /* SYWebVoiceDownloaderOperation.m */; };
+		186ABEA21EC985FD000BC9C4 /* SYWebVoiceCompat.m in Sources */ = {isa = PBXBuildFile; fileRef = 186ABEA11EC985FD000BC9C4 /* SYWebVoiceCompat.m */; };
+		186ABEA51EC99F90000BC9C4 /* UIView+WebVoiceCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 186ABEA41EC99F90000BC9C4 /* UIView+WebVoiceCache.m */; };
+		186ABEA91ECAA24B000BC9C4 /* SYWebVoicePlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 186ABEA81ECAA24B000BC9C4 /* SYWebVoicePlayer.m */; };
+		186ABEAC1ECADDDC000BC9C4 /* SYVocieView.m in Sources */ = {isa = PBXBuildFile; fileRef = 186ABEAB1ECADDDC000BC9C4 /* SYVocieView.m */; };
+		18E63DF81EF1045B00ACAC5E /* voice_00@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 18E63DF21EF1045B00ACAC5E /* voice_00@2x.png */; };
+		18E63DF91EF1045B00ACAC5E /* voice_00@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 18E63DF31EF1045B00ACAC5E /* voice_00@3x.png */; };
+		18E63DFA1EF1045B00ACAC5E /* voice_01@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 18E63DF41EF1045B00ACAC5E /* voice_01@2x.png */; };
+		18E63DFB1EF1045B00ACAC5E /* voice_01@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 18E63DF51EF1045B00ACAC5E /* voice_01@3x.png */; };
+		18E63DFC1EF1045B00ACAC5E /* voice_02@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 18E63DF61EF1045B00ACAC5E /* voice_02@2x.png */; };
+		18E63DFD1EF1045B00ACAC5E /* voice_02@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 18E63DF71EF1045B00ACAC5E /* voice_02@3x.png */; };
+		18E63E011EF1048300ACAC5E /* TestListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E63DFF1EF1048300ACAC5E /* TestListViewController.m */; };
+		18E63E021EF1048300ACAC5E /* TestListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18E63E001EF1048300ACAC5E /* TestListViewController.xib */; };
+		18E63E101EF1060E00ACAC5E /* TestListTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E63E0E1EF1060E00ACAC5E /* TestListTableViewCell.m */; };
+		18E63E111EF1060E00ACAC5E /* TestListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18E63E0F1EF1060E00ACAC5E /* TestListTableViewCell.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		186ABE761EC94C9B000BC9C4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 186ABE541EC94C9B000BC9C4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 186ABE5B1EC94C9B000BC9C4;
+			remoteInfo = SYWebVoice;
+		};
+		186ABE811EC94C9B000BC9C4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 186ABE541EC94C9B000BC9C4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 186ABE5B1EC94C9B000BC9C4;
+			remoteInfo = SYWebVoice;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		186ABE5C1EC94C9B000BC9C4 /* SYWebVoice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SYWebVoice.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		186ABE601EC94C9B000BC9C4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		186ABE621EC94C9B000BC9C4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		186ABE631EC94C9B000BC9C4 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		186ABE651EC94C9B000BC9C4 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		186ABE661EC94C9B000BC9C4 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		186ABE691EC94C9B000BC9C4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		186ABE6B1EC94C9B000BC9C4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		186ABE6E1EC94C9B000BC9C4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		186ABE701EC94C9B000BC9C4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		186ABE751EC94C9B000BC9C4 /* SYWebVoiceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SYWebVoiceTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		186ABE791EC94C9B000BC9C4 /* SYWebVoiceTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SYWebVoiceTests.m; sourceTree = "<group>"; };
+		186ABE7B1EC94C9B000BC9C4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		186ABE801EC94C9B000BC9C4 /* SYWebVoiceUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SYWebVoiceUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		186ABE841EC94C9B000BC9C4 /* SYWebVoiceUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SYWebVoiceUITests.m; sourceTree = "<group>"; };
+		186ABE861EC94C9B000BC9C4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		186ABE931EC9515D000BC9C4 /* SYWebVoiceManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SYWebVoiceManager.h; sourceTree = "<group>"; };
+		186ABE941EC9515D000BC9C4 /* SYWebVoiceManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SYWebVoiceManager.m; sourceTree = "<group>"; };
+		186ABE961EC95181000BC9C4 /* SYWebVoiceDownloader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SYWebVoiceDownloader.h; sourceTree = "<group>"; };
+		186ABE971EC95181000BC9C4 /* SYWebVoiceDownloader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SYWebVoiceDownloader.m; sourceTree = "<group>"; };
+		186ABE991EC9533E000BC9C4 /* SYWebVoiceCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SYWebVoiceCache.h; sourceTree = "<group>"; };
+		186ABE9A1EC9533E000BC9C4 /* SYWebVoiceCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SYWebVoiceCache.m; sourceTree = "<group>"; };
+		186ABE9C1EC95375000BC9C4 /* SYWebVoiceDownloaderOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SYWebVoiceDownloaderOperation.h; sourceTree = "<group>"; };
+		186ABE9D1EC95375000BC9C4 /* SYWebVoiceDownloaderOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SYWebVoiceDownloaderOperation.m; sourceTree = "<group>"; };
+		186ABE9F1EC95B38000BC9C4 /* SYWebVoiceOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SYWebVoiceOperation.h; sourceTree = "<group>"; };
+		186ABEA01EC985FD000BC9C4 /* SYWebVoiceCompat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SYWebVoiceCompat.h; sourceTree = "<group>"; };
+		186ABEA11EC985FD000BC9C4 /* SYWebVoiceCompat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SYWebVoiceCompat.m; sourceTree = "<group>"; };
+		186ABEA31EC99F90000BC9C4 /* UIView+WebVoiceCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+WebVoiceCache.h"; sourceTree = "<group>"; };
+		186ABEA41EC99F90000BC9C4 /* UIView+WebVoiceCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+WebVoiceCache.m"; sourceTree = "<group>"; };
+		186ABEA71ECAA24B000BC9C4 /* SYWebVoicePlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SYWebVoicePlayer.h; sourceTree = "<group>"; };
+		186ABEA81ECAA24B000BC9C4 /* SYWebVoicePlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SYWebVoicePlayer.m; sourceTree = "<group>"; };
+		186ABEAA1ECADDDC000BC9C4 /* SYVocieView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SYVocieView.h; sourceTree = "<group>"; };
+		186ABEAB1ECADDDC000BC9C4 /* SYVocieView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SYVocieView.m; sourceTree = "<group>"; };
+		18E63DF21EF1045B00ACAC5E /* voice_00@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "voice_00@2x.png"; sourceTree = "<group>"; };
+		18E63DF31EF1045B00ACAC5E /* voice_00@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "voice_00@3x.png"; sourceTree = "<group>"; };
+		18E63DF41EF1045B00ACAC5E /* voice_01@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "voice_01@2x.png"; sourceTree = "<group>"; };
+		18E63DF51EF1045B00ACAC5E /* voice_01@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "voice_01@3x.png"; sourceTree = "<group>"; };
+		18E63DF61EF1045B00ACAC5E /* voice_02@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "voice_02@2x.png"; sourceTree = "<group>"; };
+		18E63DF71EF1045B00ACAC5E /* voice_02@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "voice_02@3x.png"; sourceTree = "<group>"; };
+		18E63DFE1EF1048300ACAC5E /* TestListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestListViewController.h; sourceTree = "<group>"; };
+		18E63DFF1EF1048300ACAC5E /* TestListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestListViewController.m; sourceTree = "<group>"; };
+		18E63E001EF1048300ACAC5E /* TestListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TestListViewController.xib; sourceTree = "<group>"; };
+		18E63E0D1EF1060E00ACAC5E /* TestListTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestListTableViewCell.h; sourceTree = "<group>"; };
+		18E63E0E1EF1060E00ACAC5E /* TestListTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestListTableViewCell.m; sourceTree = "<group>"; };
+		18E63E0F1EF1060E00ACAC5E /* TestListTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TestListTableViewCell.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		186ABE591EC94C9B000BC9C4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		186ABE721EC94C9B000BC9C4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		186ABE7D1EC94C9B000BC9C4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		186ABE531EC94C9B000BC9C4 = {
+			isa = PBXGroup;
+			children = (
+				18E63DF11EF1045B00ACAC5E /* IMG */,
+				186ABE5E1EC94C9B000BC9C4 /* SYWebVoice */,
+				186ABE781EC94C9B000BC9C4 /* SYWebVoiceTests */,
+				186ABE831EC94C9B000BC9C4 /* SYWebVoiceUITests */,
+				186ABE5D1EC94C9B000BC9C4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		186ABE5D1EC94C9B000BC9C4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				186ABE5C1EC94C9B000BC9C4 /* SYWebVoice.app */,
+				186ABE751EC94C9B000BC9C4 /* SYWebVoiceTests.xctest */,
+				186ABE801EC94C9B000BC9C4 /* SYWebVoiceUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		186ABE5E1EC94C9B000BC9C4 /* SYWebVoice */ = {
+			isa = PBXGroup;
+			children = (
+				186ABE921EC94EFE000BC9C4 /* SYWebVoice */,
+				186ABE621EC94C9B000BC9C4 /* AppDelegate.h */,
+				186ABE631EC94C9B000BC9C4 /* AppDelegate.m */,
+				186ABE651EC94C9B000BC9C4 /* ViewController.h */,
+				186ABE661EC94C9B000BC9C4 /* ViewController.m */,
+				18E63DFE1EF1048300ACAC5E /* TestListViewController.h */,
+				18E63DFF1EF1048300ACAC5E /* TestListViewController.m */,
+				18E63E001EF1048300ACAC5E /* TestListViewController.xib */,
+				18E63E0D1EF1060E00ACAC5E /* TestListTableViewCell.h */,
+				18E63E0E1EF1060E00ACAC5E /* TestListTableViewCell.m */,
+				18E63E0F1EF1060E00ACAC5E /* TestListTableViewCell.xib */,
+				186ABE681EC94C9B000BC9C4 /* Main.storyboard */,
+				186ABE6B1EC94C9B000BC9C4 /* Assets.xcassets */,
+				186ABE6D1EC94C9B000BC9C4 /* LaunchScreen.storyboard */,
+				186ABE701EC94C9B000BC9C4 /* Info.plist */,
+				186ABE5F1EC94C9B000BC9C4 /* Supporting Files */,
+				186ABEAA1ECADDDC000BC9C4 /* SYVocieView.h */,
+				186ABEAB1ECADDDC000BC9C4 /* SYVocieView.m */,
+			);
+			path = SYWebVoice;
+			sourceTree = "<group>";
+		};
+		186ABE5F1EC94C9B000BC9C4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				186ABE601EC94C9B000BC9C4 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		186ABE781EC94C9B000BC9C4 /* SYWebVoiceTests */ = {
+			isa = PBXGroup;
+			children = (
+				186ABE791EC94C9B000BC9C4 /* SYWebVoiceTests.m */,
+				186ABE7B1EC94C9B000BC9C4 /* Info.plist */,
+			);
+			path = SYWebVoiceTests;
+			sourceTree = "<group>";
+		};
+		186ABE831EC94C9B000BC9C4 /* SYWebVoiceUITests */ = {
+			isa = PBXGroup;
+			children = (
+				186ABE841EC94C9B000BC9C4 /* SYWebVoiceUITests.m */,
+				186ABE861EC94C9B000BC9C4 /* Info.plist */,
+			);
+			path = SYWebVoiceUITests;
+			sourceTree = "<group>";
+		};
+		186ABE921EC94EFE000BC9C4 /* SYWebVoice */ = {
+			isa = PBXGroup;
+			children = (
+				186ABE931EC9515D000BC9C4 /* SYWebVoiceManager.h */,
+				186ABE941EC9515D000BC9C4 /* SYWebVoiceManager.m */,
+				186ABE961EC95181000BC9C4 /* SYWebVoiceDownloader.h */,
+				186ABE971EC95181000BC9C4 /* SYWebVoiceDownloader.m */,
+				186ABE9C1EC95375000BC9C4 /* SYWebVoiceDownloaderOperation.h */,
+				186ABE9D1EC95375000BC9C4 /* SYWebVoiceDownloaderOperation.m */,
+				186ABE991EC9533E000BC9C4 /* SYWebVoiceCache.h */,
+				186ABE9A1EC9533E000BC9C4 /* SYWebVoiceCache.m */,
+				186ABE9F1EC95B38000BC9C4 /* SYWebVoiceOperation.h */,
+				186ABEA01EC985FD000BC9C4 /* SYWebVoiceCompat.h */,
+				186ABEA11EC985FD000BC9C4 /* SYWebVoiceCompat.m */,
+				186ABEA31EC99F90000BC9C4 /* UIView+WebVoiceCache.h */,
+				186ABEA41EC99F90000BC9C4 /* UIView+WebVoiceCache.m */,
+				186ABEA71ECAA24B000BC9C4 /* SYWebVoicePlayer.h */,
+				186ABEA81ECAA24B000BC9C4 /* SYWebVoicePlayer.m */,
+			);
+			path = SYWebVoice;
+			sourceTree = "<group>";
+		};
+		18E63DF11EF1045B00ACAC5E /* IMG */ = {
+			isa = PBXGroup;
+			children = (
+				18E63DF21EF1045B00ACAC5E /* voice_00@2x.png */,
+				18E63DF31EF1045B00ACAC5E /* voice_00@3x.png */,
+				18E63DF41EF1045B00ACAC5E /* voice_01@2x.png */,
+				18E63DF51EF1045B00ACAC5E /* voice_01@3x.png */,
+				18E63DF61EF1045B00ACAC5E /* voice_02@2x.png */,
+				18E63DF71EF1045B00ACAC5E /* voice_02@3x.png */,
+			);
+			name = IMG;
+			path = SYWebVoice/IMG;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		186ABE5B1EC94C9B000BC9C4 /* SYWebVoice */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 186ABE891EC94C9B000BC9C4 /* Build configuration list for PBXNativeTarget "SYWebVoice" */;
+			buildPhases = (
+				186ABE581EC94C9B000BC9C4 /* Sources */,
+				186ABE591EC94C9B000BC9C4 /* Frameworks */,
+				186ABE5A1EC94C9B000BC9C4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SYWebVoice;
+			productName = SYWebVoice;
+			productReference = 186ABE5C1EC94C9B000BC9C4 /* SYWebVoice.app */;
+			productType = "com.apple.product-type.application";
+		};
+		186ABE741EC94C9B000BC9C4 /* SYWebVoiceTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 186ABE8C1EC94C9B000BC9C4 /* Build configuration list for PBXNativeTarget "SYWebVoiceTests" */;
+			buildPhases = (
+				186ABE711EC94C9B000BC9C4 /* Sources */,
+				186ABE721EC94C9B000BC9C4 /* Frameworks */,
+				186ABE731EC94C9B000BC9C4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				186ABE771EC94C9B000BC9C4 /* PBXTargetDependency */,
+			);
+			name = SYWebVoiceTests;
+			productName = SYWebVoiceTests;
+			productReference = 186ABE751EC94C9B000BC9C4 /* SYWebVoiceTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		186ABE7F1EC94C9B000BC9C4 /* SYWebVoiceUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 186ABE8F1EC94C9B000BC9C4 /* Build configuration list for PBXNativeTarget "SYWebVoiceUITests" */;
+			buildPhases = (
+				186ABE7C1EC94C9B000BC9C4 /* Sources */,
+				186ABE7D1EC94C9B000BC9C4 /* Frameworks */,
+				186ABE7E1EC94C9B000BC9C4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				186ABE821EC94C9B000BC9C4 /* PBXTargetDependency */,
+			);
+			name = SYWebVoiceUITests;
+			productName = SYWebVoiceUITests;
+			productReference = 186ABE801EC94C9B000BC9C4 /* SYWebVoiceUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		186ABE541EC94C9B000BC9C4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = baoyewei;
+				TargetAttributes = {
+					186ABE5B1EC94C9B000BC9C4 = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = 62K8MBYJ3Q;
+						ProvisioningStyle = Automatic;
+					};
+					186ABE741EC94C9B000BC9C4 = {
+						CreatedOnToolsVersion = 8.3.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 186ABE5B1EC94C9B000BC9C4;
+					};
+					186ABE7F1EC94C9B000BC9C4 = {
+						CreatedOnToolsVersion = 8.3.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 186ABE5B1EC94C9B000BC9C4;
+					};
+				};
+			};
+			buildConfigurationList = 186ABE571EC94C9B000BC9C4 /* Build configuration list for PBXProject "SYWebVoice" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 186ABE531EC94C9B000BC9C4;
+			productRefGroup = 186ABE5D1EC94C9B000BC9C4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				186ABE5B1EC94C9B000BC9C4 /* SYWebVoice */,
+				186ABE741EC94C9B000BC9C4 /* SYWebVoiceTests */,
+				186ABE7F1EC94C9B000BC9C4 /* SYWebVoiceUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		186ABE5A1EC94C9B000BC9C4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18E63DFD1EF1045B00ACAC5E /* voice_02@3x.png in Resources */,
+				186ABE6F1EC94C9B000BC9C4 /* LaunchScreen.storyboard in Resources */,
+				18E63E021EF1048300ACAC5E /* TestListViewController.xib in Resources */,
+				18E63DF81EF1045B00ACAC5E /* voice_00@2x.png in Resources */,
+				18E63DFA1EF1045B00ACAC5E /* voice_01@2x.png in Resources */,
+				18E63E111EF1060E00ACAC5E /* TestListTableViewCell.xib in Resources */,
+				18E63DFC1EF1045B00ACAC5E /* voice_02@2x.png in Resources */,
+				186ABE6C1EC94C9B000BC9C4 /* Assets.xcassets in Resources */,
+				18E63DFB1EF1045B00ACAC5E /* voice_01@3x.png in Resources */,
+				18E63DF91EF1045B00ACAC5E /* voice_00@3x.png in Resources */,
+				186ABE6A1EC94C9B000BC9C4 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		186ABE731EC94C9B000BC9C4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		186ABE7E1EC94C9B000BC9C4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		186ABE581EC94C9B000BC9C4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				186ABEA91ECAA24B000BC9C4 /* SYWebVoicePlayer.m in Sources */,
+				186ABE9B1EC9533E000BC9C4 /* SYWebVoiceCache.m in Sources */,
+				186ABEA51EC99F90000BC9C4 /* UIView+WebVoiceCache.m in Sources */,
+				186ABEA21EC985FD000BC9C4 /* SYWebVoiceCompat.m in Sources */,
+				186ABE671EC94C9B000BC9C4 /* ViewController.m in Sources */,
+				186ABE951EC9515D000BC9C4 /* SYWebVoiceManager.m in Sources */,
+				18E63E011EF1048300ACAC5E /* TestListViewController.m in Sources */,
+				186ABE981EC95181000BC9C4 /* SYWebVoiceDownloader.m in Sources */,
+				186ABEAC1ECADDDC000BC9C4 /* SYVocieView.m in Sources */,
+				186ABE641EC94C9B000BC9C4 /* AppDelegate.m in Sources */,
+				186ABE611EC94C9B000BC9C4 /* main.m in Sources */,
+				186ABE9E1EC95375000BC9C4 /* SYWebVoiceDownloaderOperation.m in Sources */,
+				18E63E101EF1060E00ACAC5E /* TestListTableViewCell.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		186ABE711EC94C9B000BC9C4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				186ABE7A1EC94C9B000BC9C4 /* SYWebVoiceTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		186ABE7C1EC94C9B000BC9C4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				186ABE851EC94C9B000BC9C4 /* SYWebVoiceUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		186ABE771EC94C9B000BC9C4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 186ABE5B1EC94C9B000BC9C4 /* SYWebVoice */;
+			targetProxy = 186ABE761EC94C9B000BC9C4 /* PBXContainerItemProxy */;
+		};
+		186ABE821EC94C9B000BC9C4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 186ABE5B1EC94C9B000BC9C4 /* SYWebVoice */;
+			targetProxy = 186ABE811EC94C9B000BC9C4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		186ABE681EC94C9B000BC9C4 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				186ABE691EC94C9B000BC9C4 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		186ABE6D1EC94C9B000BC9C4 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				186ABE6E1EC94C9B000BC9C4 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		186ABE871EC94C9B000BC9C4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		186ABE881EC94C9B000BC9C4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		186ABE8A1EC94C9B000BC9C4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 62K8MBYJ3Q;
+				INFOPLIST_FILE = SYWebVoice/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.suiyueyule.SYWebVoice;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		186ABE8B1EC94C9B000BC9C4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 62K8MBYJ3Q;
+				INFOPLIST_FILE = SYWebVoice/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.suiyueyule.SYWebVoice;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		186ABE8D1EC94C9B000BC9C4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = SYWebVoiceTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.suiyueyule.SYWebVoiceTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SYWebVoice.app/SYWebVoice";
+			};
+			name = Debug;
+		};
+		186ABE8E1EC94C9B000BC9C4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = SYWebVoiceTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.suiyueyule.SYWebVoiceTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SYWebVoice.app/SYWebVoice";
+			};
+			name = Release;
+		};
+		186ABE901EC94C9B000BC9C4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = SYWebVoiceUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.suiyueyule.SYWebVoiceUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = SYWebVoice;
+			};
+			name = Debug;
+		};
+		186ABE911EC94C9B000BC9C4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = SYWebVoiceUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.suiyueyule.SYWebVoiceUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = SYWebVoice;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		186ABE571EC94C9B000BC9C4 /* Build configuration list for PBXProject "SYWebVoice" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				186ABE871EC94C9B000BC9C4 /* Debug */,
+				186ABE881EC94C9B000BC9C4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		186ABE891EC94C9B000BC9C4 /* Build configuration list for PBXNativeTarget "SYWebVoice" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				186ABE8A1EC94C9B000BC9C4 /* Debug */,
+				186ABE8B1EC94C9B000BC9C4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		186ABE8C1EC94C9B000BC9C4 /* Build configuration list for PBXNativeTarget "SYWebVoiceTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				186ABE8D1EC94C9B000BC9C4 /* Debug */,
+				186ABE8E1EC94C9B000BC9C4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		186ABE8F1EC94C9B000BC9C4 /* Build configuration list for PBXNativeTarget "SYWebVoiceUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				186ABE901EC94C9B000BC9C4 /* Debug */,
+				186ABE911EC94C9B000BC9C4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 186ABE541EC94C9B000BC9C4 /* Project object */;
+}
