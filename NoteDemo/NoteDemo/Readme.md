@@ -1,9 +1,11 @@
 
 1. 寻找响应View  （hitTest:withEvent:  内部调用pointInside:withEvent:）
-    //找到最合适的view 一般分为三步
+    事件链：UIApplication对象——>UIWindow对象——>rootVC.view对象——>subviews
     1.判断自身能否接受触摸事件        当userInteractionEnabled=NO hidden=YES alpha=0 这三种情况不能接受事件
     2.判断触摸点是否在自己的身上
     3.遍历自己所有的子试图，去找到最合适的VIew，从后往前遍历，意思就是说，从自己的子试图中倒序遍历，然后去重复1.2
+    
+    响应链：通过上面事件链找到view后，如何不能响应则通过nextResponder向下传递直到window层，若还没有则事件无效
     
     引申题: 寻找两个子view最近的父view？
     方案：遍历两个子view的superView得到两个数组，如果两个子view有相同的父view，则数组内的最后几个对象相同(类似于寻找两个相交链表的第一个相交点)
