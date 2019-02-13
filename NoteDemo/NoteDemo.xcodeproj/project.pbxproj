@@ -20,6 +20,9 @@
 		2724A7F921F9A7DE00376E0C /* 消息转发.png in Resources */ = {isa = PBXBuildFile; fileRef = 2724A7F821F9A7DE00376E0C /* 消息转发.png */; };
 		2724A7FB21F9A84700376E0C /* class_isa.png in Resources */ = {isa = PBXBuildFile; fileRef = 2724A7FA21F9A84700376E0C /* class_isa.png */; };
 		2724A7FD21F9ADEA00376E0C /* runloop.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2724A7FC21F9ADEA00376E0C /* runloop.jpg */; };
+		2724A7FF21F9CE5800376E0C /* lock.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2724A7FE21F9CE5800376E0C /* lock.jpg */; };
+		2724A8042213C1FA00376E0C /* TestUIViewAnimationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2724A8022213C1FA00376E0C /* TestUIViewAnimationController.m */; };
+		2724A8052213C1FA00376E0C /* TestUIViewAnimationController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2724A8032213C1FA00376E0C /* TestUIViewAnimationController.xib */; };
 		2726BA3921CBB54500ECE464 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2726BA3821CBB54500ECE464 /* AppDelegate.m */; };
 		2726BA3C21CBB54500ECE464 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2726BA3B21CBB54500ECE464 /* ViewController.m */; };
 		2726BA3F21CBB54500ECE464 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2726BA3D21CBB54500ECE464 /* Main.storyboard */; };
@@ -72,6 +75,10 @@
 		2724A7F821F9A7DE00376E0C /* 消息转发.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "消息转发.png"; sourceTree = "<group>"; };
 		2724A7FA21F9A84700376E0C /* class_isa.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = class_isa.png; sourceTree = "<group>"; };
 		2724A7FC21F9ADEA00376E0C /* runloop.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = runloop.jpg; sourceTree = "<group>"; };
+		2724A7FE21F9CE5800376E0C /* lock.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = lock.jpg; sourceTree = "<group>"; };
+		2724A8012213C1FA00376E0C /* TestUIViewAnimationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestUIViewAnimationController.h; sourceTree = "<group>"; };
+		2724A8022213C1FA00376E0C /* TestUIViewAnimationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestUIViewAnimationController.m; sourceTree = "<group>"; };
+		2724A8032213C1FA00376E0C /* TestUIViewAnimationController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TestUIViewAnimationController.xib; sourceTree = "<group>"; };
 		2726BA3421CBB54500ECE464 /* NoteDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NoteDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2726BA3721CBB54500ECE464 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		2726BA3821CBB54500ECE464 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -157,10 +164,21 @@
 			isa = PBXGroup;
 			children = (
 				2724A7F821F9A7DE00376E0C /* 消息转发.png */,
+				2724A7FE21F9CE5800376E0C /* lock.jpg */,
 				2724A7FC21F9ADEA00376E0C /* runloop.jpg */,
 				2724A7FA21F9A84700376E0C /* class_isa.png */,
 			);
 			path = Pic;
+			sourceTree = "<group>";
+		};
+		2724A8002213C19300376E0C /* Animation */ = {
+			isa = PBXGroup;
+			children = (
+				2724A8012213C1FA00376E0C /* TestUIViewAnimationController.h */,
+				2724A8022213C1FA00376E0C /* TestUIViewAnimationController.m */,
+				2724A8032213C1FA00376E0C /* TestUIViewAnimationController.xib */,
+			);
+			path = Animation;
 			sourceTree = "<group>";
 		};
 		2726BA2B21CBB54500ECE464 = {
@@ -190,6 +208,7 @@
 			children = (
 				2724A7F721F9A74500376E0C /* Pic */,
 				2724A7F221F9A25000376E0C /* Readme.md */,
+				2724A8002213C19300376E0C /* Animation */,
 				2724A7E921F849A600376E0C /* NSString */,
 				2724A7DD21F6BCFB00376E0C /* Class */,
 				2726BA7E21D0818200ECE464 /* Category */,
@@ -383,8 +402,10 @@
 				2724A7E821F6BD3A00376E0C /* TestClassViewController.xib in Resources */,
 				2724A7F321F9A25000376E0C /* Readme.md in Resources */,
 				2726BA4121CBB54700ECE464 /* Assets.xcassets in Resources */,
+				2724A7FF21F9CE5800376E0C /* lock.jpg in Resources */,
 				2724A7FD21F9ADEA00376E0C /* runloop.jpg in Resources */,
 				2724A7EE21F849C200376E0C /* TestStringViewController.xib in Resources */,
+				2724A8052213C1FA00376E0C /* TestUIViewAnimationController.xib in Resources */,
 				2726BA3F21CBB54500ECE464 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -498,6 +519,7 @@
 				2724A7F121F994F500376E0C /* TestSingletonObj.m in Sources */,
 				2724A7E021F6BD1400376E0C /* ClassA.m in Sources */,
 				2726BA3921CBB54500ECE464 /* AppDelegate.m in Sources */,
+				2724A8042213C1FA00376E0C /* TestUIViewAnimationController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -46,8 +46,9 @@
     
     
     //[self testSegmentView];
-    NSArray *data = @[[listItem itemWithKey:@"Self/Super" value:@"TestClassViewController"],
+    NSArray *data = @[[listItem itemWithKey:@"Class/Self/Super" value:@"TestClassViewController"],
                       [listItem itemWithKey:@"NSString" value:@"TestStringViewController"],
+                      [listItem itemWithKey:@"Animation" value:@"TestUIViewAnimationController"],
                       ];
     self.listData = [[NSMutableArray alloc] initWithArray:data];
 }

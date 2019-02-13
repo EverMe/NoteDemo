@@ -26,6 +26,13 @@
     return [self class];
 }
 
++(void)load{
+    NSLog(@"load ClassB");
+}
+//+ (void)initialize{
+//    NSLog(@"initialize ClassB");
+//}
+
 @end
 
 

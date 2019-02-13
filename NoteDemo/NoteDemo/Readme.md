@@ -35,4 +35,4 @@ Block: 避免循环引用使用weak指针。  NSTimer: 使用YYWeakProxy  让sel
     NSStackBlock 栈区block,位于内存的栈区,一般作为函数的参数出现。 
     NSMallocBlock 堆区block,位于内存的堆区,一般作为对象的property出现。
 
-
+8.load与initialize的区别  见ClassA.m

@@ -11,20 +11,21 @@
 @interface UIViewMethodVC ()
 
 #define kSceneH 200
-#define kSceneW self.view.frame.size.width
+#define kSceneW [UIScreen mainScreen].bounds.size.width
 #define kRandomColor [UIColor colorWithRed:arc4random_uniform(256)/255.0 green:arc4random_uniform(256)/255.0 blue:arc4random_uniform(256)/255.0 alpha:1.0]
 
 @property (weak, nonatomic) IBOutlet UIScrollView *mScrollView;
-@property (assign, nonatomic) BOOL sceneNum;
+@property (assign, nonatomic) NSInteger sceneNum;
 @end
 
 @implementation UIViewMethodVC
 
+//https://www.jianshu.com/p/9fa025c42261
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     self.sceneNum = 0;
- 
+    self.mScrollView.contentSize = CGSizeMake(kSceneW, 50*kSceneH);
     
     
     [self test1];
@@ -34,12 +35,14 @@
 - (void)test1{
     
     
-    UIView *aView = [self addNewScene];
+//    UIView *aView = [self addNewScene];xr
    
 
 }
 
 - (UIView *)addNewScene{
+    
+    
     
     UIView *aView = [[UIView alloc] init];
     aView.frame = CGRectMake(0, self.sceneNum*kSceneH, kSceneW, kSceneH);

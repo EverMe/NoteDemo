@@ -20,6 +20,8 @@
     // Do any additional setup after loading the view from its nib.
     
     
+    ClassA *a = [[ClassA alloc] init];
+    
     [self test];
     
 }
