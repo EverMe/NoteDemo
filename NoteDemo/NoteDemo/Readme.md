@@ -30,9 +30,20 @@ Block: 避免循环引用使用weak指针。  NSTimer: 使用YYWeakProxy  让sel
 
 6. self/super [self class] [super class]  ---详见TestClassViewController
 
-7. Block有几种
+7. Block有几种  http://www.cocoachina.com/cms/wap.php?action=article&id=23147
     NSGlobalBlock 静态区block,这是一种特殊的bloclk,因为不引用外部变量而存在。另外,作为静态区的对象,它的释放是有操作系统控制的,这一点我们最后再聊。 
     NSStackBlock 栈区block,位于内存的栈区,一般作为函数的参数出现。 
     NSMallocBlock 堆区block,位于内存的堆区,一般作为对象的property出现。
-
+    
+    2.1 Block声明及定义语法，及其变形
+    
+    //方法中
+    return_type (^blockName)(var_type) = ^return_type (var_type varName) { // ... };
+    //属性
+    @property(nonatomic, copy) return_type (^blockName) (var_type);
+    //参数
+    -(void)yourMethod:(return_type (^)(var_type))blockName;
+    
+    利用typedef简化Block的声明：typedef return_type (^BlockTypeName)(var_type);
+    
 8.load与initialize的区别  见ClassA.m
