@@ -21,18 +21,30 @@
     
     
     ClassA *a = [[ClassA alloc] init];
+    [self testSelfAndSuper];
     
-    [self test];
-    
+    [self testIsKindOfClass];
 }
 
-
-- (void)test{
+//Self Super Class isa的概念
+- (void)testSelfAndSuper{
     
     ClassB *b = [[ClassB alloc] init];
     [b testClass1];
     [b testClass2];
 }
 
+//isKindOfClass:确定一个对象是否是一个类的成员,或者是派生自该类的成员. isMemberOfClass:确定一个对象是否是当前类的成员.
+- (void)testIsKindOfClass{
+    //https://www.jianshu.com/p/04f84472c1b8
+    //https://www.jianshu.com/p/3bbd81ff35c3
+    
+    BOOL res1 = [(id)[NSObject class] isKindOfClass:[NSObject class]];
+    BOOL res2 = [(id)[NSObject class] isMemberOfClass:[NSObject class]];
+    BOOL res3 = [(id)[ClassA class] isKindOfClass:[ClassA class]];
+    BOOL res4 = [(id)[ClassA class] isMemberOfClass:[ClassA class]];
+    
+    NSLog(@"%d , %d ,%d ,%d",res1,res2,res3,res4);
+}
 
 @end

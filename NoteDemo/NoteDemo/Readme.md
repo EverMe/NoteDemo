@@ -36,14 +36,38 @@ Block: 避免循环引用使用weak指针。  NSTimer: 使用YYWeakProxy  让sel
     NSMallocBlock 堆区block,位于内存的堆区,一般作为对象的property出现。
     
     2.1 Block声明及定义语法，及其变形
-    
     //方法中
     return_type (^blockName)(var_type) = ^return_type (var_type varName) { // ... };
     //属性
     @property(nonatomic, copy) return_type (^blockName) (var_type);
     //参数
     -(void)yourMethod:(return_type (^)(var_type))blockName;
-    
-    利用typedef简化Block的声明：typedef return_type (^BlockTypeName)(var_type);
+    //block作返回值
+    - (return_type(^)(var_type))methodName
+    //利用typedef简化Block的声明
+    typedef return_type (^BlockTypeName)(var_type);
     
 8.load与initialize的区别  见ClassA.m
+
+
+
+
+
+
+
+
+
+
+ 
+iOS中isKindOfClass和isMemberOfClass的区别  
+
+https://www.jianshu.com/p/04f84472c1b8
+
+
+NSURLConnection 与 NSURLSession的区别
+NSURLProtocol详解和应用
+NSProxy
+GCD NSOpeartion NSThread
+CADisplayLink  NSTimer  GCD 三种定时器
+
+
