@@ -39,6 +39,9 @@
     //https://www.jianshu.com/p/04f84472c1b8
     //https://www.jianshu.com/p/3bbd81ff35c3
     
+    //类对象的class是meta-class
+    //instance的class是类对象
+
     BOOL res1 = [(id)[NSObject class] isKindOfClass:[NSObject class]];
     BOOL res2 = [(id)[NSObject class] isMemberOfClass:[NSObject class]];
     BOOL res3 = [(id)[ClassA class] isKindOfClass:[ClassA class]];

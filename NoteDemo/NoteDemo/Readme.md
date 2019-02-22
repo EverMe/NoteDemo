@@ -31,6 +31,10 @@ Block: 避免循环引用使用weak指针。  NSTimer: 使用YYWeakProxy  让sel
 6. self/super [self class] [super class]  ---详见TestClassViewController
 
 7. Block有几种  http://www.cocoachina.com/cms/wap.php?action=article&id=23147
+    
+    Block是可以获取其他函数局部变量的匿名函数，其不但方便开发，并且可以大幅提高应用的执行效率(多核心CPU可直接处理Block指令)
+    
+    1.三种类型
     NSGlobalBlock 静态区block,这是一种特殊的bloclk,因为不引用外部变量而存在。另外,作为静态区的对象,它的释放是有操作系统控制的,这一点我们最后再聊。 
     NSStackBlock 栈区block,位于内存的栈区,一般作为函数的参数出现。 
     NSMallocBlock 堆区block,位于内存的堆区,一般作为对象的property出现。
@@ -60,7 +64,6 @@ Block: 避免循环引用使用weak指针。  NSTimer: 使用YYWeakProxy  让sel
 
  
 iOS中isKindOfClass和isMemberOfClass的区别  
-
 https://www.jianshu.com/p/04f84472c1b8
 
 
@@ -71,3 +74,11 @@ GCD NSOpeartion NSThread
 CADisplayLink  NSTimer  GCD 三种定时器
 
 
+100. iOS 静态库 动态库 framework的理解 (https://www.jianshu.com/p/a37328bcee8f)
+a 文件肯定是静态库, .dylib/.tbd肯定是动态库, .framework 可能是静态库也可能是动态库
+静态库在链接时, 会被完整的赋值到可执行文件中, 如果多个APP都使用了同一个静态库, 那么每个APP都会拷贝一份, 缺点是浪费内存, 类似于定义一个基本变量, 使用该基本变量是新复制了一份数据, 而不是原来定义的
+动态库不会复制,只有一份, 程序运行时动态加载到内存中, 系统只会加载一次, 多个程序公用一份, 节约了内存. 类似于使用变量的内存地址一样. 使用的是同一个变量
+但是项目中如果使用了自己定义的动态库, 苹果是不允许上架的, 在 iOS8 后 苹果开放了动态加载 .dylib 的接口, 用于挂载 .dylib 动态库
+好处：1.封闭隐藏代码  2.MRC的项目打包成静态库, 可以在ARC下直接使用, 不用转换
+使用.a 时 需要同时将.a 和 .h 文件拖入到工程中, 使用 .framework时 直接将这个文件夹拖入进去即可, 因为 .framework 文件夹中已经包含了 .h 文件
+.a + .h + .bundle = .framework 所以使用framework 更方便
