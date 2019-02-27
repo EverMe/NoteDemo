@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		171E0C2EB1156B670CC8B37D /* Pods_NoteDemoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C38585016A4B417E39658F87 /* Pods_NoteDemoUITests.framework */; };
+		271D32CE2223F3EA00D7852F /* testLocation.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 271D32CD2223F3EA00D7852F /* testLocation.gpx */; };
 		2724A7E021F6BD1400376E0C /* ClassA.m in Sources */ = {isa = PBXBuildFile; fileRef = 2724A7DF21F6BD1400376E0C /* ClassA.m */; };
 		2724A7E321F6BD2200376E0C /* ClassB.m in Sources */ = {isa = PBXBuildFile; fileRef = 2724A7E221F6BD2200376E0C /* ClassB.m */; };
 		2724A7E721F6BD3A00376E0C /* TestClassViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2724A7E521F6BD3A00376E0C /* TestClassViewController.m */; };
@@ -57,6 +58,7 @@
 /* Begin PBXFileReference section */
 		03048DAFC3D28805B1E4AFC0 /* Pods-NoteDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NoteDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NoteDemo/Pods-NoteDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		05D1B52878C28C4C371CACCF /* Pods-NoteDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NoteDemoTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-NoteDemoTests/Pods-NoteDemoTests.release.xcconfig"; sourceTree = "<group>"; };
+		271D32CD2223F3EA00D7852F /* testLocation.gpx */ = {isa = PBXFileReference; lastKnownFileType = text; path = testLocation.gpx; sourceTree = "<group>"; };
 		2724A7DE21F6BD1400376E0C /* ClassA.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ClassA.h; sourceTree = "<group>"; };
 		2724A7DF21F6BD1400376E0C /* ClassA.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ClassA.m; sourceTree = "<group>"; };
 		2724A7E121F6BD2200376E0C /* ClassB.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ClassB.h; sourceTree = "<group>"; };
@@ -184,6 +186,7 @@
 		2726BA2B21CBB54500ECE464 = {
 			isa = PBXGroup;
 			children = (
+				271D32CD2223F3EA00D7852F /* testLocation.gpx */,
 				2726BA3621CBB54500ECE464 /* NoteDemo */,
 				2726BA4F21CBB54700ECE464 /* NoteDemoTests */,
 				2726BA5A21CBB54700ECE464 /* NoteDemoUITests */,
@@ -406,6 +409,7 @@
 				2724A7FD21F9ADEA00376E0C /* runloop.jpg in Resources */,
 				2724A7EE21F849C200376E0C /* TestStringViewController.xib in Resources */,
 				2724A8052213C1FA00376E0C /* TestUIViewAnimationController.xib in Resources */,
+				271D32CE2223F3EA00D7852F /* testLocation.gpx in Resources */,
 				2726BA3F21CBB54500ECE464 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

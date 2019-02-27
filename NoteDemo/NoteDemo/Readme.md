@@ -14,7 +14,7 @@
 2.  内存泄漏常见例子及解决方案
 Block: 避免循环引用使用weak指针。  NSTimer: 使用YYWeakProxy  让self强引用timer，timer强引用proxy；proxy弱引用self；避免相互强引用
 
-3. 单例的优化方案---详见TestSingletonObj
+3. 单例的优化方案---详见Something---TestSingletonObj
     推荐第一种(三方框架使用):  使用NS_UNAVAILABLE来禁止调用init和new方法
     第二种: 重写allocWithZone:  如有需要copyWithZone: mutableCopyWithZone:等  MRC下retain  release方法
 

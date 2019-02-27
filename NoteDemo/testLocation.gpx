@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<gpx
+    xmlns="http://www.topografix.com/GPX/1/1"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd"
+    version="1.1"
+    creator="gpx-poi.com">
+    <wpt lat="39.9772898410" lon="116.3989000464">
+        <time>2019-02-25T04:18:32Z</time>
+    </wpt>
+</gpx>
+
+
+<!--修改经纬度，然后Debug : Simulate Location : 选中gpx文件 -->
+
+
