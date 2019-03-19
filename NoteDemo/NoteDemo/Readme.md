@@ -31,9 +31,10 @@ Block: 避免循环引用使用weak指针。  NSTimer: 使用YYWeakProxy  让sel
 6. self/super [self class] [super class]  ---详见TestClassViewController
 
 7. Block有几种  http://www.cocoachina.com/cms/wap.php?action=article&id=23147
+    http://www.cocoachina.com/ios/20180628/23965.html
     
+    block本质上是一个OC对象，它内部有个isa指针（block最终都是继承自NSBlock类型，而NSBlock继承于NSObjcet。那么block其中的isa指针其实是来自NSObject中的。这也更加印证了block的本质其实就是OC对象），block是封装了函数调用以及函数调用环境的OC对象。
     Block是可以获取其他函数局部变量的匿名函数，其不但方便开发，并且可以大幅提高应用的执行效率(多核心CPU可直接处理Block指令)
-    
     1.三种类型
     NSGlobalBlock 静态区block,这是一种特殊的bloclk,因为不引用外部变量而存在。另外,作为静态区的对象,它的释放是有操作系统控制的,这一点我们最后再聊。 
     NSStackBlock 栈区block,位于内存的栈区,一般作为函数的参数出现。 
@@ -54,15 +55,34 @@ Block: 避免循环引用使用weak指针。  NSTimer: 使用YYWeakProxy  让sel
 8.load与initialize的区别  见ClassA.m
 
 
+9. 通知/代理/block的区别与使用
+    在消息传递中，block其实只是一个对象，代理/通知是一种设计模式（代理委托模式/通知观察者模式）
+    通知：一对多 ，block和代理一般是一对一
+    block的优势：代码可读性更好，写起来方便，不需要像代理声明协议，写协议方法等
+    block的劣势：运行成本相较于代理高，因为需要封装数据和上下文到到堆内存和block内的对象引用计数+1使用完或者block置nil后才消除
+                            而代理只保存了一个对象指针 ，其次block容易造成循环引用，出现内存泄露情况，代理相对安全许多。
+    如何使用：
+    优先使用block。
+    如果回调的状态很多，多于三个使用代理。
+    如果回调的很频繁，次数很多，像UITableview，每次初始化、滑动、点击都会回调，使用代理。
+    
+10.离屏渲染的理解与优化 
+    On-Screen Rendering：当前屏幕渲染，指的是在当前用于显示的屏幕缓冲区中进行渲染操作。
+    Off-Screen Rendering：离屏渲染，指的是 GPU 或 CPU 在当前屏幕缓冲区以外新开辟一个缓冲区进行渲染操作。过程中需要切换 contexts (上下文环境),先从当前屏幕切换到离屏的contexts，渲染结束后，又要将 contexts 切换回来，而切换过程十分耗费性能。
+        GPU 产生的离屏渲染主要是当 CALayer 使用圆角，阴影，遮罩等属性的的时候，图层属性的混合体被指定为在未预合成之前不能直接在屏幕中渲染，则过程中需要进行离屏渲染。
+        由于垂直同步的机制，如果在一个 HSync（刷新频率FPS 1/60s） 时间内，CPU 或者 GPU 没有完成内容提交，则那一帧就会被丢弃，等待下一次机会再显示，而这时显示屏会保留之前的内容不变。这就是界面卡顿的原因。既然离屏渲染这么耗性能,为什么有这套机制呢?
+        有些效果被认为不能直接呈现于屏幕，而需要在别的地方做额外的处理预合成。图层属性的混合体没有预合成之前不能直接在屏幕中绘制，所以就需要屏幕外渲染。屏幕外渲染并不意味着软件绘制，但是它意味着图层必须在被显示之前在一个屏幕外上下文中被渲染（不论CPU还是GPU）。
+
+        链接：https://www.jianshu.com/p/cff0d1b3c915
+
+UIView 和 CALayer 的关系 ：简单来说，UIView 是对 CALayer 的一个封装。
+    CALayer 负责显示内容contents，UIView 为其提供内容，以及负责处理触摸等事件，参与响应链。
+    
+11.NSTimer与CADisplayLink的区别
+    
+    
 
 
-
-
-
-
-
-
- 
 iOS中isKindOfClass和isMemberOfClass的区别  
 https://www.jianshu.com/p/04f84472c1b8
 

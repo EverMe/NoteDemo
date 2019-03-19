@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		171E0C2EB1156B670CC8B37D /* Pods_NoteDemoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C38585016A4B417E39658F87 /* Pods_NoteDemoUITests.framework */; };
+		18988B98223A4A6600D2E0FB /* RunLoop内部的逻辑.png in Resources */ = {isa = PBXBuildFile; fileRef = 18988B97223A4A6600D2E0FB /* RunLoop内部的逻辑.png */; };
+		18988BAA223E36DC00D2E0FB /* TestGCDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18988BA8223E36DC00D2E0FB /* TestGCDViewController.m */; };
+		18988BAB223E36DC00D2E0FB /* TestGCDViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18988BA9223E36DC00D2E0FB /* TestGCDViewController.xib */; };
+		18988BB0223E423400D2E0FB /* TestRunloopController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18988BAE223E423400D2E0FB /* TestRunloopController.m */; };
+		18988BB1223E423400D2E0FB /* TestRunloopController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18988BAF223E423400D2E0FB /* TestRunloopController.xib */; };
 		271D32CE2223F3EA00D7852F /* testLocation.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 271D32CD2223F3EA00D7852F /* testLocation.gpx */; };
 		2724A7E021F6BD1400376E0C /* ClassA.m in Sources */ = {isa = PBXBuildFile; fileRef = 2724A7DF21F6BD1400376E0C /* ClassA.m */; };
 		2724A7E321F6BD2200376E0C /* ClassB.m in Sources */ = {isa = PBXBuildFile; fileRef = 2724A7E221F6BD2200376E0C /* ClassB.m */; };
@@ -58,6 +63,13 @@
 /* Begin PBXFileReference section */
 		03048DAFC3D28805B1E4AFC0 /* Pods-NoteDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NoteDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NoteDemo/Pods-NoteDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		05D1B52878C28C4C371CACCF /* Pods-NoteDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NoteDemoTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-NoteDemoTests/Pods-NoteDemoTests.release.xcconfig"; sourceTree = "<group>"; };
+		18988B97223A4A6600D2E0FB /* RunLoop内部的逻辑.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "RunLoop内部的逻辑.png"; sourceTree = "<group>"; };
+		18988BA7223E36DC00D2E0FB /* TestGCDViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestGCDViewController.h; sourceTree = "<group>"; };
+		18988BA8223E36DC00D2E0FB /* TestGCDViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestGCDViewController.m; sourceTree = "<group>"; };
+		18988BA9223E36DC00D2E0FB /* TestGCDViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TestGCDViewController.xib; sourceTree = "<group>"; };
+		18988BAD223E423400D2E0FB /* TestRunloopController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestRunloopController.h; sourceTree = "<group>"; };
+		18988BAE223E423400D2E0FB /* TestRunloopController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestRunloopController.m; sourceTree = "<group>"; };
+		18988BAF223E423400D2E0FB /* TestRunloopController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TestRunloopController.xib; sourceTree = "<group>"; };
 		271D32CD2223F3EA00D7852F /* testLocation.gpx */ = {isa = PBXFileReference; lastKnownFileType = text; path = testLocation.gpx; sourceTree = "<group>"; };
 		2724A7DE21F6BD1400376E0C /* ClassA.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ClassA.h; sourceTree = "<group>"; };
 		2724A7DF21F6BD1400376E0C /* ClassA.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ClassA.m; sourceTree = "<group>"; };
@@ -138,6 +150,50 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		18988BA3223E368100D2E0FB /* 多线程 */ = {
+			isa = PBXGroup;
+			children = (
+				18988BA6223E36B000D2E0FB /* NSOpeartion */,
+				18988BA5223E36A800D2E0FB /* NSThread */,
+				18988BA4223E368F00D2E0FB /* GCD */,
+			);
+			path = "多线程";
+			sourceTree = "<group>";
+		};
+		18988BA4223E368F00D2E0FB /* GCD */ = {
+			isa = PBXGroup;
+			children = (
+				18988BA7223E36DC00D2E0FB /* TestGCDViewController.h */,
+				18988BA8223E36DC00D2E0FB /* TestGCDViewController.m */,
+				18988BA9223E36DC00D2E0FB /* TestGCDViewController.xib */,
+			);
+			path = GCD;
+			sourceTree = "<group>";
+		};
+		18988BA5223E36A800D2E0FB /* NSThread */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = NSThread;
+			sourceTree = "<group>";
+		};
+		18988BA6223E36B000D2E0FB /* NSOpeartion */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = NSOpeartion;
+			sourceTree = "<group>";
+		};
+		18988BAC223E422000D2E0FB /* Runloop */ = {
+			isa = PBXGroup;
+			children = (
+				18988BAD223E423400D2E0FB /* TestRunloopController.h */,
+				18988BAE223E423400D2E0FB /* TestRunloopController.m */,
+				18988BAF223E423400D2E0FB /* TestRunloopController.xib */,
+			);
+			path = Runloop;
+			sourceTree = "<group>";
+		};
 		2724A7DD21F6BCFB00376E0C /* Class */ = {
 			isa = PBXGroup;
 			children = (
@@ -168,6 +224,7 @@
 				2724A7F821F9A7DE00376E0C /* 消息转发.png */,
 				2724A7FE21F9CE5800376E0C /* lock.jpg */,
 				2724A7FC21F9ADEA00376E0C /* runloop.jpg */,
+				18988B97223A4A6600D2E0FB /* RunLoop内部的逻辑.png */,
 				2724A7FA21F9A84700376E0C /* class_isa.png */,
 			);
 			path = Pic;
@@ -209,6 +266,8 @@
 		2726BA3621CBB54500ECE464 /* NoteDemo */ = {
 			isa = PBXGroup;
 			children = (
+				18988BAC223E422000D2E0FB /* Runloop */,
+				18988BA3223E368100D2E0FB /* 多线程 */,
 				2724A7F721F9A74500376E0C /* Pic */,
 				2724A7F221F9A25000376E0C /* Readme.md */,
 				2724A8002213C19300376E0C /* Animation */,
@@ -404,12 +463,15 @@
 				2724A7FB21F9A84700376E0C /* class_isa.png in Resources */,
 				2724A7E821F6BD3A00376E0C /* TestClassViewController.xib in Resources */,
 				2724A7F321F9A25000376E0C /* Readme.md in Resources */,
+				18988BAB223E36DC00D2E0FB /* TestGCDViewController.xib in Resources */,
 				2726BA4121CBB54700ECE464 /* Assets.xcassets in Resources */,
 				2724A7FF21F9CE5800376E0C /* lock.jpg in Resources */,
 				2724A7FD21F9ADEA00376E0C /* runloop.jpg in Resources */,
 				2724A7EE21F849C200376E0C /* TestStringViewController.xib in Resources */,
 				2724A8052213C1FA00376E0C /* TestUIViewAnimationController.xib in Resources */,
 				271D32CE2223F3EA00D7852F /* testLocation.gpx in Resources */,
+				18988B98223A4A6600D2E0FB /* RunLoop内部的逻辑.png in Resources */,
+				18988BB1223E423400D2E0FB /* TestRunloopController.xib in Resources */,
 				2726BA3F21CBB54500ECE464 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -515,11 +577,13 @@
 				2724A7F621F9A6D800376E0C /* TestMsgSend.m in Sources */,
 				2726BA3C21CBB54500ECE464 /* ViewController.m in Sources */,
 				2724A7ED21F849C200376E0C /* TestStringViewController.m in Sources */,
+				18988BAA223E36DC00D2E0FB /* TestGCDViewController.m in Sources */,
 				2724A7E721F6BD3A00376E0C /* TestClassViewController.m in Sources */,
 				2726BA4721CBB54700ECE464 /* main.m in Sources */,
 				2726BA6C21CBB72D00ECE464 /* MYSegmentView.m in Sources */,
 				2726BA8421D0A8C700ECE464 /* NSString+Utility.m in Sources */,
 				2724A7E321F6BD2200376E0C /* ClassB.m in Sources */,
+				18988BB0223E423400D2E0FB /* TestRunloopController.m in Sources */,
 				2724A7F121F994F500376E0C /* TestSingletonObj.m in Sources */,
 				2724A7E021F6BD1400376E0C /* ClassA.m in Sources */,
 				2726BA3921CBB54500ECE464 /* AppDelegate.m in Sources */,

@@ -35,9 +35,6 @@
     //由于emoji 中英文 所占length与字节数都不同  当使用substringToIndex等类似方法时，有可能导致末尾字符不完整
     //常见于输入框限制字数的需求  [@"abcdfs😯fe😯eg😯e中文😯" substringToIndex:12];
     //NSString+Utility
-    
-   
-    
 }
 
 /** 系统分割字符串的原则 */

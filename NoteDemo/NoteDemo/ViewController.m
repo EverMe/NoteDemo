@@ -44,12 +44,14 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
-    UITableView *a;
     //[self testSegmentView];
     NSArray *data = @[[listItem itemWithKey:@"Class/Self/Super" value:@"TestClassViewController"],
                       [listItem itemWithKey:@"NSString" value:@"TestStringViewController"],
                       [listItem itemWithKey:@"Animation" value:@"TestUIViewAnimationController"],
+                      [listItem itemWithKey:@"Runloop" value:@"TestRunloopController"],
+                      [listItem itemWithKey:@"多线程-GCD" value:@"TestGCDViewController"],
                       ];
+    
     self.listData = [[NSMutableArray alloc] initWithArray:data];
 }
 
