@@ -13,6 +13,9 @@
 		18988BAB223E36DC00D2E0FB /* TestGCDViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18988BA9223E36DC00D2E0FB /* TestGCDViewController.xib */; };
 		18988BB0223E423400D2E0FB /* TestRunloopController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18988BAE223E423400D2E0FB /* TestRunloopController.m */; };
 		18988BB1223E423400D2E0FB /* TestRunloopController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18988BAF223E423400D2E0FB /* TestRunloopController.xib */; };
+		18988BB42241E4CD00D2E0FB /* NSObject+DLIntrospection.m in Sources */ = {isa = PBXBuildFile; fileRef = 18988BB32241E4CD00D2E0FB /* NSObject+DLIntrospection.m */; };
+		18988BB92243386400D2E0FB /* TestThreadQAController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18988BB72243386400D2E0FB /* TestThreadQAController.m */; };
+		18988BBA2243386400D2E0FB /* TestThreadQAController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18988BB82243386400D2E0FB /* TestThreadQAController.xib */; };
 		271D32CE2223F3EA00D7852F /* testLocation.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 271D32CD2223F3EA00D7852F /* testLocation.gpx */; };
 		2724A7E021F6BD1400376E0C /* ClassA.m in Sources */ = {isa = PBXBuildFile; fileRef = 2724A7DF21F6BD1400376E0C /* ClassA.m */; };
 		2724A7E321F6BD2200376E0C /* ClassB.m in Sources */ = {isa = PBXBuildFile; fileRef = 2724A7E221F6BD2200376E0C /* ClassB.m */; };
@@ -70,6 +73,11 @@
 		18988BAD223E423400D2E0FB /* TestRunloopController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestRunloopController.h; sourceTree = "<group>"; };
 		18988BAE223E423400D2E0FB /* TestRunloopController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestRunloopController.m; sourceTree = "<group>"; };
 		18988BAF223E423400D2E0FB /* TestRunloopController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TestRunloopController.xib; sourceTree = "<group>"; };
+		18988BB22241E4CD00D2E0FB /* NSObject+DLIntrospection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+DLIntrospection.h"; sourceTree = "<group>"; };
+		18988BB32241E4CD00D2E0FB /* NSObject+DLIntrospection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+DLIntrospection.m"; sourceTree = "<group>"; };
+		18988BB62243386400D2E0FB /* TestThreadQAController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestThreadQAController.h; sourceTree = "<group>"; };
+		18988BB72243386400D2E0FB /* TestThreadQAController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestThreadQAController.m; sourceTree = "<group>"; };
+		18988BB82243386400D2E0FB /* TestThreadQAController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TestThreadQAController.xib; sourceTree = "<group>"; };
 		271D32CD2223F3EA00D7852F /* testLocation.gpx */ = {isa = PBXFileReference; lastKnownFileType = text; path = testLocation.gpx; sourceTree = "<group>"; };
 		2724A7DE21F6BD1400376E0C /* ClassA.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ClassA.h; sourceTree = "<group>"; };
 		2724A7DF21F6BD1400376E0C /* ClassA.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ClassA.m; sourceTree = "<group>"; };
@@ -153,6 +161,7 @@
 		18988BA3223E368100D2E0FB /* 多线程 */ = {
 			isa = PBXGroup;
 			children = (
+				18988BB52243382400D2E0FB /* Other */,
 				18988BA6223E36B000D2E0FB /* NSOpeartion */,
 				18988BA5223E36A800D2E0FB /* NSThread */,
 				18988BA4223E368F00D2E0FB /* GCD */,
@@ -192,6 +201,16 @@
 				18988BAF223E423400D2E0FB /* TestRunloopController.xib */,
 			);
 			path = Runloop;
+			sourceTree = "<group>";
+		};
+		18988BB52243382400D2E0FB /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				18988BB62243386400D2E0FB /* TestThreadQAController.h */,
+				18988BB72243386400D2E0FB /* TestThreadQAController.m */,
+				18988BB82243386400D2E0FB /* TestThreadQAController.xib */,
+			);
+			path = Other;
 			sourceTree = "<group>";
 		};
 		2724A7DD21F6BCFB00376E0C /* Class */ = {
@@ -322,6 +341,8 @@
 		2726BA7E21D0818200ECE464 /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				18988BB22241E4CD00D2E0FB /* NSObject+DLIntrospection.h */,
+				18988BB32241E4CD00D2E0FB /* NSObject+DLIntrospection.m */,
 				2726BA8221D0A8C700ECE464 /* NSString+Utility.h */,
 				2726BA8321D0A8C700ECE464 /* NSString+Utility.m */,
 			);
@@ -467,6 +488,7 @@
 				2726BA4121CBB54700ECE464 /* Assets.xcassets in Resources */,
 				2724A7FF21F9CE5800376E0C /* lock.jpg in Resources */,
 				2724A7FD21F9ADEA00376E0C /* runloop.jpg in Resources */,
+				18988BBA2243386400D2E0FB /* TestThreadQAController.xib in Resources */,
 				2724A7EE21F849C200376E0C /* TestStringViewController.xib in Resources */,
 				2724A8052213C1FA00376E0C /* TestUIViewAnimationController.xib in Resources */,
 				271D32CE2223F3EA00D7852F /* testLocation.gpx in Resources */,
@@ -575,6 +597,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2724A7F621F9A6D800376E0C /* TestMsgSend.m in Sources */,
+				18988BB92243386400D2E0FB /* TestThreadQAController.m in Sources */,
 				2726BA3C21CBB54500ECE464 /* ViewController.m in Sources */,
 				2724A7ED21F849C200376E0C /* TestStringViewController.m in Sources */,
 				18988BAA223E36DC00D2E0FB /* TestGCDViewController.m in Sources */,
@@ -583,6 +606,7 @@
 				2726BA6C21CBB72D00ECE464 /* MYSegmentView.m in Sources */,
 				2726BA8421D0A8C700ECE464 /* NSString+Utility.m in Sources */,
 				2724A7E321F6BD2200376E0C /* ClassB.m in Sources */,
+				18988BB42241E4CD00D2E0FB /* NSObject+DLIntrospection.m in Sources */,
 				18988BB0223E423400D2E0FB /* TestRunloopController.m in Sources */,
 				2724A7F121F994F500376E0C /* TestSingletonObj.m in Sources */,
 				2724A7E021F6BD1400376E0C /* ClassA.m in Sources */,

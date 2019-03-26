@@ -79,8 +79,11 @@ UIView 和 CALayer 的关系 ：简单来说，UIView 是对 CALayer 的一个�
     CALayer 负责显示内容contents，UIView 为其提供内容，以及负责处理触摸等事件，参与响应链。
     
 11.NSTimer与CADisplayLink的区别
-    
-    
+  
+12.iOS图片加载过程解析及优化  http://blog.cnbang.net/tech/2578/  
+        https://www.jianshu.com/p/72dd074728d8
+
+
 
 
 iOS中isKindOfClass和isMemberOfClass的区别  

@@ -50,6 +50,7 @@
                       [listItem itemWithKey:@"Animation" value:@"TestUIViewAnimationController"],
                       [listItem itemWithKey:@"Runloop" value:@"TestRunloopController"],
                       [listItem itemWithKey:@"多线程-GCD" value:@"TestGCDViewController"],
+                      [listItem itemWithKey:@"多线程-QA" value:@"TestThreadQAController"],
                       ];
     
     self.listData = [[NSMutableArray alloc] initWithArray:data];
