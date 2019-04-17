@@ -22,4 +22,12 @@
 
 
 + (NSString *)parentClassHierarchy;
+
+
+/**
+ 交换SEL
+ @param originalSEL 原来SEL
+ @param swizzledSEL 交换SEL
+ */
++ (void)swizzleSEL:(SEL)originalSEL withSEL:(SEL)swizzledSEL;
 @end

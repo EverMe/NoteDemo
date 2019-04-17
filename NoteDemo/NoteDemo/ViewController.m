@@ -51,6 +51,9 @@
                       [listItem itemWithKey:@"Runloop" value:@"TestRunloopController"],
                       [listItem itemWithKey:@"多线程-GCD" value:@"TestGCDViewController"],
                       [listItem itemWithKey:@"多线程-QA" value:@"TestThreadQAController"],
+                      [listItem itemWithKey:@"Runtime-Hook" value:@"TestHookMethodController"],
+                      [listItem itemWithKey:@"Runtime-Timer" value:@"TestTimerController"],
+                      
                       ];
     
     self.listData = [[NSMutableArray alloc] initWithArray:data];

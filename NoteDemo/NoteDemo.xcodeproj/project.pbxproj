@@ -16,6 +16,16 @@
 		18988BB42241E4CD00D2E0FB /* NSObject+DLIntrospection.m in Sources */ = {isa = PBXBuildFile; fileRef = 18988BB32241E4CD00D2E0FB /* NSObject+DLIntrospection.m */; };
 		18988BB92243386400D2E0FB /* TestThreadQAController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18988BB72243386400D2E0FB /* TestThreadQAController.m */; };
 		18988BBA2243386400D2E0FB /* TestThreadQAController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18988BB82243386400D2E0FB /* TestThreadQAController.xib */; };
+		18C8C4FF2265D91C00DD0B12 /* People.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C8C4FE2265D91C00DD0B12 /* People.m */; };
+		18C8C5022265D93000DD0B12 /* Student.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C8C5012265D93000DD0B12 /* Student.m */; };
+		18C8C5052265D9C000DD0B12 /* People+A.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C8C5042265D9C000DD0B12 /* People+A.m */; };
+		18C8C5082265D9CB00DD0B12 /* People+B.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C8C5072265D9CB00DD0B12 /* People+B.m */; };
+		18C8C50D2265DC5900DD0B12 /* TestHookMethodController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C8C50B2265DC5900DD0B12 /* TestHookMethodController.m */; };
+		18C8C50E2265DC5900DD0B12 /* TestHookMethodController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18C8C50C2265DC5900DD0B12 /* TestHookMethodController.xib */; };
+		18C8C5112265DD2E00DD0B12 /* People+C.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C8C5102265DD2E00DD0B12 /* People+C.m */; };
+		18C8C5162265E2F100DD0B12 /* SYTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C8C5152265E2F100DD0B12 /* SYTimer.m */; };
+		18C8C51B226730F100DD0B12 /* TestTimerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C8C519226730F100DD0B12 /* TestTimerController.m */; };
+		18C8C51C226730F100DD0B12 /* TestTimerController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18C8C51A226730F100DD0B12 /* TestTimerController.xib */; };
 		271D32CE2223F3EA00D7852F /* testLocation.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 271D32CD2223F3EA00D7852F /* testLocation.gpx */; };
 		2724A7E021F6BD1400376E0C /* ClassA.m in Sources */ = {isa = PBXBuildFile; fileRef = 2724A7DF21F6BD1400376E0C /* ClassA.m */; };
 		2724A7E321F6BD2200376E0C /* ClassB.m in Sources */ = {isa = PBXBuildFile; fileRef = 2724A7E221F6BD2200376E0C /* ClassB.m */; };
@@ -78,6 +88,24 @@
 		18988BB62243386400D2E0FB /* TestThreadQAController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestThreadQAController.h; sourceTree = "<group>"; };
 		18988BB72243386400D2E0FB /* TestThreadQAController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestThreadQAController.m; sourceTree = "<group>"; };
 		18988BB82243386400D2E0FB /* TestThreadQAController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TestThreadQAController.xib; sourceTree = "<group>"; };
+		18C8C4FD2265D91C00DD0B12 /* People.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = People.h; sourceTree = "<group>"; };
+		18C8C4FE2265D91C00DD0B12 /* People.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = People.m; sourceTree = "<group>"; };
+		18C8C5002265D93000DD0B12 /* Student.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Student.h; sourceTree = "<group>"; };
+		18C8C5012265D93000DD0B12 /* Student.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Student.m; sourceTree = "<group>"; };
+		18C8C5032265D9C000DD0B12 /* People+A.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "People+A.h"; sourceTree = "<group>"; };
+		18C8C5042265D9C000DD0B12 /* People+A.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "People+A.m"; sourceTree = "<group>"; };
+		18C8C5062265D9CB00DD0B12 /* People+B.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "People+B.h"; sourceTree = "<group>"; };
+		18C8C5072265D9CB00DD0B12 /* People+B.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "People+B.m"; sourceTree = "<group>"; };
+		18C8C50A2265DC5900DD0B12 /* TestHookMethodController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestHookMethodController.h; sourceTree = "<group>"; };
+		18C8C50B2265DC5900DD0B12 /* TestHookMethodController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestHookMethodController.m; sourceTree = "<group>"; };
+		18C8C50C2265DC5900DD0B12 /* TestHookMethodController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TestHookMethodController.xib; sourceTree = "<group>"; };
+		18C8C50F2265DD2E00DD0B12 /* People+C.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "People+C.h"; sourceTree = "<group>"; };
+		18C8C5102265DD2E00DD0B12 /* People+C.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "People+C.m"; sourceTree = "<group>"; };
+		18C8C5142265E2F100DD0B12 /* SYTimer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SYTimer.h; sourceTree = "<group>"; };
+		18C8C5152265E2F100DD0B12 /* SYTimer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SYTimer.m; sourceTree = "<group>"; };
+		18C8C518226730F100DD0B12 /* TestTimerController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestTimerController.h; sourceTree = "<group>"; };
+		18C8C519226730F100DD0B12 /* TestTimerController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestTimerController.m; sourceTree = "<group>"; };
+		18C8C51A226730F100DD0B12 /* TestTimerController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TestTimerController.xib; sourceTree = "<group>"; };
 		271D32CD2223F3EA00D7852F /* testLocation.gpx */ = {isa = PBXFileReference; lastKnownFileType = text; path = testLocation.gpx; sourceTree = "<group>"; };
 		2724A7DE21F6BD1400376E0C /* ClassA.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ClassA.h; sourceTree = "<group>"; };
 		2724A7DF21F6BD1400376E0C /* ClassA.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ClassA.m; sourceTree = "<group>"; };
@@ -213,6 +241,47 @@
 			path = Other;
 			sourceTree = "<group>";
 		};
+		18C8C4FC2265D90200DD0B12 /* Runtime */ = {
+			isa = PBXGroup;
+			children = (
+				18C8C517226730D500DD0B12 /* Timer */,
+				18C8C5092265DC3300DD0B12 /* hook */,
+			);
+			path = Runtime;
+			sourceTree = "<group>";
+		};
+		18C8C5092265DC3300DD0B12 /* hook */ = {
+			isa = PBXGroup;
+			children = (
+				18C8C4FD2265D91C00DD0B12 /* People.h */,
+				18C8C4FE2265D91C00DD0B12 /* People.m */,
+				18C8C5002265D93000DD0B12 /* Student.h */,
+				18C8C5012265D93000DD0B12 /* Student.m */,
+				18C8C5032265D9C000DD0B12 /* People+A.h */,
+				18C8C5042265D9C000DD0B12 /* People+A.m */,
+				18C8C5062265D9CB00DD0B12 /* People+B.h */,
+				18C8C5072265D9CB00DD0B12 /* People+B.m */,
+				18C8C50F2265DD2E00DD0B12 /* People+C.h */,
+				18C8C5102265DD2E00DD0B12 /* People+C.m */,
+				18C8C50A2265DC5900DD0B12 /* TestHookMethodController.h */,
+				18C8C50B2265DC5900DD0B12 /* TestHookMethodController.m */,
+				18C8C50C2265DC5900DD0B12 /* TestHookMethodController.xib */,
+			);
+			path = hook;
+			sourceTree = "<group>";
+		};
+		18C8C517226730D500DD0B12 /* Timer */ = {
+			isa = PBXGroup;
+			children = (
+				18C8C5142265E2F100DD0B12 /* SYTimer.h */,
+				18C8C5152265E2F100DD0B12 /* SYTimer.m */,
+				18C8C518226730F100DD0B12 /* TestTimerController.h */,
+				18C8C519226730F100DD0B12 /* TestTimerController.m */,
+				18C8C51A226730F100DD0B12 /* TestTimerController.xib */,
+			);
+			path = Timer;
+			sourceTree = "<group>";
+		};
 		2724A7DD21F6BCFB00376E0C /* Class */ = {
 			isa = PBXGroup;
 			children = (
@@ -285,6 +354,7 @@
 		2726BA3621CBB54500ECE464 /* NoteDemo */ = {
 			isa = PBXGroup;
 			children = (
+				18C8C4FC2265D90200DD0B12 /* Runtime */,
 				18988BAC223E422000D2E0FB /* Runloop */,
 				18988BA3223E368100D2E0FB /* 多线程 */,
 				2724A7F721F9A74500376E0C /* Pic */,
@@ -480,6 +550,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2724A7F921F9A7DE00376E0C /* 消息转发.png in Resources */,
+				18C8C50E2265DC5900DD0B12 /* TestHookMethodController.xib in Resources */,
 				2726BA4421CBB54700ECE464 /* LaunchScreen.storyboard in Resources */,
 				2724A7FB21F9A84700376E0C /* class_isa.png in Resources */,
 				2724A7E821F6BD3A00376E0C /* TestClassViewController.xib in Resources */,
@@ -493,6 +564,7 @@
 				2724A8052213C1FA00376E0C /* TestUIViewAnimationController.xib in Resources */,
 				271D32CE2223F3EA00D7852F /* testLocation.gpx in Resources */,
 				18988B98223A4A6600D2E0FB /* RunLoop内部的逻辑.png in Resources */,
+				18C8C51C226730F100DD0B12 /* TestTimerController.xib in Resources */,
 				18988BB1223E423400D2E0FB /* TestRunloopController.xib in Resources */,
 				2726BA3F21CBB54500ECE464 /* Main.storyboard in Resources */,
 			);
@@ -599,10 +671,17 @@
 				2724A7F621F9A6D800376E0C /* TestMsgSend.m in Sources */,
 				18988BB92243386400D2E0FB /* TestThreadQAController.m in Sources */,
 				2726BA3C21CBB54500ECE464 /* ViewController.m in Sources */,
+				18C8C4FF2265D91C00DD0B12 /* People.m in Sources */,
+				18C8C5052265D9C000DD0B12 /* People+A.m in Sources */,
+				18C8C5082265D9CB00DD0B12 /* People+B.m in Sources */,
+				18C8C5112265DD2E00DD0B12 /* People+C.m in Sources */,
+				18C8C5162265E2F100DD0B12 /* SYTimer.m in Sources */,
 				2724A7ED21F849C200376E0C /* TestStringViewController.m in Sources */,
 				18988BAA223E36DC00D2E0FB /* TestGCDViewController.m in Sources */,
+				18C8C50D2265DC5900DD0B12 /* TestHookMethodController.m in Sources */,
 				2724A7E721F6BD3A00376E0C /* TestClassViewController.m in Sources */,
 				2726BA4721CBB54700ECE464 /* main.m in Sources */,
+				18C8C51B226730F100DD0B12 /* TestTimerController.m in Sources */,
 				2726BA6C21CBB72D00ECE464 /* MYSegmentView.m in Sources */,
 				2726BA8421D0A8C700ECE464 /* NSString+Utility.m in Sources */,
 				2724A7E321F6BD2200376E0C /* ClassB.m in Sources */,
@@ -612,6 +691,7 @@
 				2724A7E021F6BD1400376E0C /* ClassA.m in Sources */,
 				2726BA3921CBB54500ECE464 /* AppDelegate.m in Sources */,
 				2724A8042213C1FA00376E0C /* TestUIViewAnimationController.m in Sources */,
+				18C8C5022265D93000DD0B12 /* Student.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

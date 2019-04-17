@@ -250,4 +250,28 @@ static void getSuper(Class class, NSMutableString *result) {
      [NSString stringWithCString:property_getName(prop) encoding:NSUTF8StringEncoding]];
     return [property copy];
 }
+
+
++ (void)swizzleSEL:(SEL)originalSEL withSEL:(SEL)swizzledSEL{
+    
+    Class class = [self class];
+    
+    Method originalMethod = class_getInstanceMethod(class, originalSEL);
+    Method swizzledMethod = class_getInstanceMethod(class, swizzledSEL);
+    
+    BOOL didAddMethod =
+    class_addMethod(class,
+                    originalSEL,
+                    method_getImplementation(swizzledMethod),
+                    method_getTypeEncoding(swizzledMethod));
+    
+    if (didAddMethod) {
+        class_replaceMethod(class,
+                            swizzledSEL,
+                            method_getImplementation(originalMethod),
+                            method_getTypeEncoding(originalMethod));
+    } else {
+        method_exchangeImplementations(originalMethod, swizzledMethod);
+    }
+}
 @end
