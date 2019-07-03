@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		171E0C2EB1156B670CC8B37D /* Pods_NoteDemoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C38585016A4B417E39658F87 /* Pods_NoteDemoUITests.framework */; };
+		1893EF0F22CCA32800A02323 /* NSSafeMutableArray.m in Sources */ = {isa = PBXBuildFile; fileRef = 1893EF0E22CCA32800A02323 /* NSSafeMutableArray.m */; };
 		18988B98223A4A6600D2E0FB /* RunLoop内部的逻辑.png in Resources */ = {isa = PBXBuildFile; fileRef = 18988B97223A4A6600D2E0FB /* RunLoop内部的逻辑.png */; };
 		18988BAA223E36DC00D2E0FB /* TestGCDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18988BA8223E36DC00D2E0FB /* TestGCDViewController.m */; };
 		18988BAB223E36DC00D2E0FB /* TestGCDViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18988BA9223E36DC00D2E0FB /* TestGCDViewController.xib */; };
@@ -76,6 +77,8 @@
 /* Begin PBXFileReference section */
 		03048DAFC3D28805B1E4AFC0 /* Pods-NoteDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NoteDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NoteDemo/Pods-NoteDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		05D1B52878C28C4C371CACCF /* Pods-NoteDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NoteDemoTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-NoteDemoTests/Pods-NoteDemoTests.release.xcconfig"; sourceTree = "<group>"; };
+		1893EF0D22CCA32800A02323 /* NSSafeMutableArray.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSSafeMutableArray.h; sourceTree = "<group>"; };
+		1893EF0E22CCA32800A02323 /* NSSafeMutableArray.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSSafeMutableArray.m; sourceTree = "<group>"; };
 		18988B97223A4A6600D2E0FB /* RunLoop内部的逻辑.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "RunLoop内部的逻辑.png"; sourceTree = "<group>"; };
 		18988BA7223E36DC00D2E0FB /* TestGCDViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestGCDViewController.h; sourceTree = "<group>"; };
 		18988BA8223E36DC00D2E0FB /* TestGCDViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestGCDViewController.m; sourceTree = "<group>"; };
@@ -404,6 +407,8 @@
 				2724A7F021F994F500376E0C /* TestSingletonObj.m */,
 				2724A7F421F9A6D800376E0C /* TestMsgSend.h */,
 				2724A7F521F9A6D800376E0C /* TestMsgSend.m */,
+				1893EF0D22CCA32800A02323 /* NSSafeMutableArray.h */,
+				1893EF0E22CCA32800A02323 /* NSSafeMutableArray.m */,
 			);
 			path = Something;
 			sourceTree = "<group>";
@@ -668,6 +673,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1893EF0F22CCA32800A02323 /* NSSafeMutableArray.m in Sources */,
 				2724A7F621F9A6D800376E0C /* TestMsgSend.m in Sources */,
 				18988BB92243386400D2E0FB /* TestThreadQAController.m in Sources */,
 				2726BA3C21CBB54500ECE464 /* ViewController.m in Sources */,

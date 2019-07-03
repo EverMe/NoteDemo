@@ -8,6 +8,8 @@
 
 #import "TestGCDViewController.h"
 
+//https://www.cnblogs.com/xiubin/p/5885007.html
+
 @interface TestGCDViewController ()
 
 @end
@@ -17,7 +19,49 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    
+    
 }
+
+- (void)testQueueAndSync{
+    
+    
+    /**
+                    并发队列                串行队列（非主队列）    主队列（只有主线程，串行队列）
+     同步(sync)     不开启新的线程，串行      不开启新的线程，串行    不开启新的线程，串行
+     异步(async)    开启新的线程，并发        开启新的线程，串行     不开启新的线程，串行
+     
+     sync async 决定是否去线程池拿新线程
+     SERIAL CONCURRENT 决定queue能取到几个线程
+     
+     
+     */
+    
+    //dispatch_sync 不会创建新线程
+    
+    NSLog(@"0---%@",NSThread.currentThread);
+    dispatch_queue_t queue = dispatch_queue_create("com.abc", DISPATCH_QUEUE_SERIAL);
+    
+//    dispatch_queue_t queue = dispatch_queue_create("com.abc", DISPATCH_QUEUE_CONCURRENT);
+    
+    
+    dispatch_async(queue, ^{
+        
+        NSLog(@"1---%@",NSThread.currentThread);
+    });
+    
+    dispatch_sync(queue, ^{
+        
+        NSLog(@"2---%@",NSThread.currentThread);
+    });
+    
+    dispatch_sync(queue, ^{
+        
+        NSLog(@"3---%@",NSThread.currentThread);
+    });
+}
+
+
 
 - (void)testSync{
     
@@ -84,7 +128,10 @@
 }
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
     
-    [self testSemaphore];
+//    [self testSemaphore];
+
+    //[self testQueueAndSync];
+    [self performSelectorInBackground:@selector(testQueueAndSync) withObject:nil];
 }
 
 @end

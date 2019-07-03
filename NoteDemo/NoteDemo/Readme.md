@@ -79,11 +79,32 @@ UIView 和 CALayer 的关系 ：简单来说，UIView 是对 CALayer 的一个�
     CALayer 负责显示内容contents，UIView 为其提供内容，以及负责处理触摸等事件，参与响应链。
     
 11.NSTimer与CADisplayLink的区别
+1.原理不同 
+CADisplayLink是一个能让我们以和屏幕刷新率同步的频率将特定的内容画到屏幕上的定时器类。 CADisplayLink以特定模式注册到runloop后， 每当屏幕显示内容刷新结束的时候，runloop就会向 CADisplayLink指定的target发送一次指定的selector消息，  CADisplayLink类对应的selector就会被调用一次。 
+NSTimer以指定的模式注册到runloop后，每当设定的周期时间到达后，runloop会向指定的target发送一次指定的selector消息。 
+
+2.周期设置方式不同
+
+iOS设备的屏幕刷新频率(FPS)是60Hz，                 
+因此CADisplayLink的selector 默认调用周期是每秒60次，这个周期可以通过frameInterval属性设置， CADisplayLink的selector每秒调用次数=60/ frameInterval。比如当 frameInterval设为2，每秒调用就变成30次。因此， CADisplayLink 周期的设置方式略显不便。 
+
+NSTimer的selector调用周期可以在初始化时直接设定，相对就灵活的多。 
+
+3、精确度不同
+iOS设备的屏幕刷新频率是固定的，CADisplayLink在正常情况下会在每次刷新结束都被调用，精确度相当高。 
+NSTimer的精确度就显得低了点，比如NSTimer的触发时间到的时候，runloop如果在阻塞状态，触发时间就会推迟到下一个runloop周期。并且 NSTimer新增了tolerance属性，让用户可以设置可以容忍的触发的时间的延迟范围。 
+
+4、使用场景
+CADisplayLink使用场合相对专一，适合做UI的不停重绘，比如自定义动画引擎或者视频播放的渲染。 
+NSTimer的使用范围要广泛的多，各种需要单次或者循环定时处理的任务都可以使用。 
+
   
 12.iOS图片加载过程解析及优化  http://blog.cnbang.net/tech/2578/  
         https://www.jianshu.com/p/72dd074728d8
 
-
+13.使用GCD实现NSMutableArray的安全读取
+    用dispatch_sync和dispatch_barrier_async结合保证NSMutableArray的线程安全，dispatch_sync是在当前线程上执行不会另开辟新的线程，当线程返回的时候就可以拿到读取的结果，我认为这个方案是最完美的选择，既保证的线程安全有发挥了多线程的优势还不用另写方法返回结果
+    https://www.jianshu.com/p/35bffa1c16ac
 
 
 iOS中isKindOfClass和isMemberOfClass的区别  
@@ -105,3 +126,9 @@ a 文件肯定是静态库, .dylib/.tbd肯定是动态库, .framework 可能是�
 好处：1.封闭隐藏代码  2.MRC的项目打包成静态库, 可以在ARC下直接使用, 不用转换
 使用.a 时 需要同时将.a 和 .h 文件拖入到工程中, 使用 .framework时 直接将这个文件夹拖入进去即可, 因为 .framework 文件夹中已经包含了 .h 文件
 .a + .h + .bundle = .framework 所以使用framework 更方便
+
+
+1. struct 与 class的区别 （C++对struct作了扩展 有成员函数 构造 析构 可继承 多态等）
+    1)权限：struct在继承和成员访问时默认都是public 而class都是private
+    2)作为参数传递时，struct作为一个数据结构作为参数传递时是值传递 而class是对象传递的是指针地址
+    3)“class”这个关键字还用于定义模板参数，就像“typename”。但关键字“struct”不用于定义模板参数。
