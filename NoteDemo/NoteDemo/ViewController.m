@@ -53,7 +53,7 @@
                       [listItem itemWithKey:@"多线程-QA" value:@"TestThreadQAController"],
                       [listItem itemWithKey:@"Runtime-Hook" value:@"TestHookMethodController"],
                       [listItem itemWithKey:@"Runtime-Timer" value:@"TestTimerController"],
-                      
+                      [listItem itemWithKey:@"BasePoint" value:@"TestBasePointController"],
                       ];
     
     self.listData = [[NSMutableArray alloc] initWithArray:data];

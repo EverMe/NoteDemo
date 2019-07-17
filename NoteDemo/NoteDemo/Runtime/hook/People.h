@@ -10,9 +10,20 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+@protocol PeopleDelegate <NSObject>
+
+- (void)peopleRun;
+
+@end
+
+
+
 @interface People : NSObject
 
+@property (nonatomic, weak) id<PeopleDelegate> delegate;
+
 - (void)eat;
+
 
 @end
 

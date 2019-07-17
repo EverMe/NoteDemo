@@ -17,7 +17,7 @@
 
 
 
-@interface TestHookMethodController ()
+@interface TestHookMethodController ()<PeopleDelegate>
 
 @end
 
@@ -28,8 +28,17 @@
     // Do any additional setup after loading the view from its nib.
     
     People *p = [People new];
+    p.delegate = self;
     [p eat];
 }
+
+- (void)peopleRun{
+    
+    
+    NSLog(@"Controller peopleRun");
+    
+}
+
 
 /*
 #pragma mark - Navigation

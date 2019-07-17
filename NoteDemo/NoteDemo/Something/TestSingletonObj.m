@@ -8,8 +8,10 @@
 
 #import "TestSingletonObj.h"
 
-@implementation TestSingletonObj
+//iOS 单例的创建、销毁、继承
+//https://www.jianshu.com/p/af7db522388c
 
+@implementation TestSingletonObj
 
 
 //第一种:
@@ -50,6 +52,14 @@
 //        instance = [super allocWithZone:zone];
 //    });
 //    return instance;
+//}
+
+
+
+//单例的销毁
+//+ (void)attempDealloc {
+//    onceToken = 0; // 只有置成0,GCD才会认为它从未执行过.它默认为0,这样才能保证下次再次调用shareInstance的时候,再次创建对象.
+//    _sharedInstance = nil;
 //}
 
 
