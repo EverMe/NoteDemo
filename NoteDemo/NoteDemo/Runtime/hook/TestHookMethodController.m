@@ -8,7 +8,7 @@
 
 #import "TestHookMethodController.h"
 #import "People.h"
-
+#import "Student+D.h"
 
 
 //https://blog.csdn.net/qq_34047841/article/details/78467477
@@ -33,21 +33,17 @@
 }
 
 - (void)peopleRun{
-    
-    
     NSLog(@"Controller peopleRun");
+}
+
+
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
+    
+    Student *s = [Student new];
+    [s see];
+    
+    
     
 }
-
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

@@ -26,6 +26,20 @@
     [self testIsKindOfClass];
 }
 
+/**
+当我们对一个实例发送消息时（-开头的方法），会在该 instance 对应的类的 methodLists 里查找。
+当我们对一个类发送消息时（+开头的方法），会在该类的 MetaClass 的 methodLists 里查找
+ 
+ NSObject  Father Son
+ 当 Son *s; 当向s发送-foo时，首先在Son的methodLists寻找 如无通过super-class在Father中 直到NSObject(父类为nil)最后都没有走消息转发
+ 当给Son 发送+foo时，在Son_Meta类的me 直到NSObject_Meta中 由于NSObject_Meta的super-class时 NSObject 所以会在NSObject中寻找 同上的最后一步
+ 所以当NSObject中有个-foo时  当调用[Son foo] 时可以调用到 -foo
+ 
+ 每个 Class 都有一个 isa 指针指向一个唯一的 Meta Class
+ 每一个 Meta Class 的 isa 指针都指向最上层的 Meta Class，即 NSObject 的 MetaClass，而最上层的 MetaClass 的 isa 指针又指向自己
+ */
+
+
 //Self Super Class isa的概念
 - (void)testSelfAndSuper{
     

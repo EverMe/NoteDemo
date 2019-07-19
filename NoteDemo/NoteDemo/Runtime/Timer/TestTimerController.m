@@ -9,6 +9,10 @@
 #import "TestTimerController.h"
 #import "SYTimer.h"
 
+
+//https://www.jianshu.com/p/046ae404bf43
+//[timer invalidate]; 此代码与创建NSTimer不在同一个线程执行是无法将Timer 执行invalidate操作
+
 @interface TestTimerController ()
 
 @property (nonatomic, strong) SYTimer *timer;

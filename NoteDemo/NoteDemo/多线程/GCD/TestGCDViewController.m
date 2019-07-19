@@ -112,19 +112,44 @@
 #warning 并发中1.2两个线程是同一个 这点还没想太明白???????
 }
 
-
+//Semaphore 实现锁的两种方式
 - (void)testSemaphore{
     //1.实现锁
     dispatch_semaphore_t lock = dispatch_semaphore_create(1);
     for (NSInteger i = 0; i < 10; i++){
+        
         dispatch_semaphore_wait(lock, DISPATCH_TIME_FOREVER);
         dispatch_async(dispatch_get_global_queue(0, 0), ^{
-            NSLog(@"%d", i);
+            NSLog(@"%ld", i);
             dispatch_semaphore_signal(lock);
         });
     }
     
+    /**
+     执行过程：创建信号量 初始值为1(相当于剩余车位1)
+     执行i=0，上来就wait (信号量-1 刚好可以停下) 继续执行异步
+     由于是异步 继续循环i=1 上来再wait 发现此时信号量已经为0 所以需要等待上次异步执行完signal后 才能继续执行
+     */
+    
+    
     //2.
+//    dispatch_semaphore_t semaphore = dispatch_semaphore_create(0);
+//    dispatch_queue_t queue = dispatch_queue_create("groupBlock", NULL);
+//    dispatch_async(queue, ^{
+//        /*
+//         code
+//         */
+//        dispatch_semaphore_signal(semaphore);
+//    });
+//    dispatch_semaphore_wait(semaphore, DISPATCH_TIME_FOREVER);
+//    NSLog(@"end");
+    
+    /**
+     
+     执行过程：创建信号量 初始值为0(相当于没有剩余车位) 但没遇到wait前都可继续执行
+     创建queue执行异步任务 同时遇到了wait 所以等待异步signal 才能执行log
+     */
+    
 }
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
     

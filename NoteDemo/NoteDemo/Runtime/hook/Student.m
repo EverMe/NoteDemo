@@ -14,4 +14,8 @@
     NSLog(@"Student study");
 }
 
+//- (void)see{
+//    NSLog(@"Student see -- %@",self.class);
+//}
+
 @end

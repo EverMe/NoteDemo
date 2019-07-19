@@ -24,7 +24,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (void)eat;
 
-
+- (void)see;
 @end
 
 NS_ASSUME_NONNULL_END

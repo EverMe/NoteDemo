@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		171E0C2EB1156B670CC8B37D /* Pods_NoteDemoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C38585016A4B417E39658F87 /* Pods_NoteDemoUITests.framework */; };
+		186FCECD22DF05F3004BBB68 /* isa_meta.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 186FCECC22DF05F3004BBB68 /* isa_meta.jpg */; };
+		186FCED122DF0EFB004BBB68 /* readme.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 186FCED022DF0EFB004BBB68 /* readme.rtf */; };
+		186FCED422E169CA004BBB68 /* SYRunloopHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 186FCED322E169CA004BBB68 /* SYRunloopHandler.m */; };
+		186FCED722E1C1D2004BBB68 /* GCDTimerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 186FCED622E1C1D2004BBB68 /* GCDTimerManager.m */; };
+		186FCEE422E1D93E004BBB68 /* Student+D.m in Sources */ = {isa = PBXBuildFile; fileRef = 186FCEE322E1D93E004BBB68 /* Student+D.m */; };
 		1893EF0F22CCA32800A02323 /* NSSafeMutableArray.m in Sources */ = {isa = PBXBuildFile; fileRef = 1893EF0E22CCA32800A02323 /* NSSafeMutableArray.m */; };
 		1893EF1422DD6A4900A02323 /* PropertyAClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 1893EF1322DD6A4900A02323 /* PropertyAClass.m */; };
 		1893EF1822DD6EEA00A02323 /* TestBasePointController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1893EF1622DD6EEA00A02323 /* TestBasePointController.m */; };
@@ -82,6 +87,14 @@
 /* Begin PBXFileReference section */
 		03048DAFC3D28805B1E4AFC0 /* Pods-NoteDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NoteDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NoteDemo/Pods-NoteDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		05D1B52878C28C4C371CACCF /* Pods-NoteDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NoteDemoTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-NoteDemoTests/Pods-NoteDemoTests.release.xcconfig"; sourceTree = "<group>"; };
+		186FCECC22DF05F3004BBB68 /* isa_meta.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = isa_meta.jpg; sourceTree = "<group>"; };
+		186FCED022DF0EFB004BBB68 /* readme.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = readme.rtf; sourceTree = "<group>"; };
+		186FCED222E169CA004BBB68 /* SYRunloopHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SYRunloopHandler.h; sourceTree = "<group>"; };
+		186FCED322E169CA004BBB68 /* SYRunloopHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SYRunloopHandler.m; sourceTree = "<group>"; };
+		186FCED522E1C1D2004BBB68 /* GCDTimerManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GCDTimerManager.h; sourceTree = "<group>"; };
+		186FCED622E1C1D2004BBB68 /* GCDTimerManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GCDTimerManager.m; sourceTree = "<group>"; };
+		186FCEE222E1D93E004BBB68 /* Student+D.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Student+D.h"; sourceTree = "<group>"; };
+		186FCEE322E1D93E004BBB68 /* Student+D.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Student+D.m"; sourceTree = "<group>"; };
 		1893EF0D22CCA32800A02323 /* NSSafeMutableArray.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSSafeMutableArray.h; sourceTree = "<group>"; };
 		1893EF0E22CCA32800A02323 /* NSSafeMutableArray.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSSafeMutableArray.m; sourceTree = "<group>"; };
 		1893EF1222DD6A4900A02323 /* PropertyAClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PropertyAClass.h; sourceTree = "<group>"; };
@@ -202,6 +215,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		186FCECE22DF0EA4004BBB68 /* Https */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Https;
+			sourceTree = "<group>";
+		};
+		186FCECF22DF0EB3004BBB68 /* 性能优化 */ = {
+			isa = PBXGroup;
+			children = (
+				186FCED022DF0EFB004BBB68 /* readme.rtf */,
+			);
+			path = "性能优化";
+			sourceTree = "<group>";
+		};
 		1893EF1022DD69C500A02323 /* Base(基础点) */ = {
 			isa = PBXGroup;
 			children = (
@@ -266,6 +294,8 @@
 				18988BAD223E423400D2E0FB /* TestRunloopController.h */,
 				18988BAE223E423400D2E0FB /* TestRunloopController.m */,
 				18988BAF223E423400D2E0FB /* TestRunloopController.xib */,
+				186FCED222E169CA004BBB68 /* SYRunloopHandler.h */,
+				186FCED322E169CA004BBB68 /* SYRunloopHandler.m */,
 			);
 			path = Runloop;
 			sourceTree = "<group>";
@@ -302,6 +332,8 @@
 				18C8C5072265D9CB00DD0B12 /* People+B.m */,
 				18C8C50F2265DD2E00DD0B12 /* People+C.h */,
 				18C8C5102265DD2E00DD0B12 /* People+C.m */,
+				186FCEE222E1D93E004BBB68 /* Student+D.h */,
+				186FCEE322E1D93E004BBB68 /* Student+D.m */,
 				18C8C50A2265DC5900DD0B12 /* TestHookMethodController.h */,
 				18C8C50B2265DC5900DD0B12 /* TestHookMethodController.m */,
 				18C8C50C2265DC5900DD0B12 /* TestHookMethodController.xib */,
@@ -317,6 +349,8 @@
 				18C8C518226730F100DD0B12 /* TestTimerController.h */,
 				18C8C519226730F100DD0B12 /* TestTimerController.m */,
 				18C8C51A226730F100DD0B12 /* TestTimerController.xib */,
+				186FCED522E1C1D2004BBB68 /* GCDTimerManager.h */,
+				186FCED622E1C1D2004BBB68 /* GCDTimerManager.m */,
 			);
 			path = Timer;
 			sourceTree = "<group>";
@@ -349,6 +383,7 @@
 			isa = PBXGroup;
 			children = (
 				2724A7F821F9A7DE00376E0C /* 消息转发.png */,
+				186FCECC22DF05F3004BBB68 /* isa_meta.jpg */,
 				2724A7FE21F9CE5800376E0C /* lock.jpg */,
 				2724A7FC21F9ADEA00376E0C /* runloop.jpg */,
 				18988B97223A4A6600D2E0FB /* RunLoop内部的逻辑.png */,
@@ -393,6 +428,8 @@
 		2726BA3621CBB54500ECE464 /* NoteDemo */ = {
 			isa = PBXGroup;
 			children = (
+				186FCECF22DF0EB3004BBB68 /* 性能优化 */,
+				186FCECE22DF0EA4004BBB68 /* Https */,
 				1893EF1022DD69C500A02323 /* Base(基础点) */,
 				18C8C4FC2265D90200DD0B12 /* Runtime */,
 				18988BAC223E422000D2E0FB /* Runloop */,
@@ -601,7 +638,9 @@
 				2724A7F321F9A25000376E0C /* Readme.md in Resources */,
 				18988BAB223E36DC00D2E0FB /* TestGCDViewController.xib in Resources */,
 				2726BA4121CBB54700ECE464 /* Assets.xcassets in Resources */,
+				186FCECD22DF05F3004BBB68 /* isa_meta.jpg in Resources */,
 				2724A7FF21F9CE5800376E0C /* lock.jpg in Resources */,
+				186FCED122DF0EFB004BBB68 /* readme.rtf in Resources */,
 				2724A7FD21F9ADEA00376E0C /* runloop.jpg in Resources */,
 				18988BBA2243386400D2E0FB /* TestThreadQAController.xib in Resources */,
 				2724A7EE21F849C200376E0C /* TestStringViewController.xib in Resources */,
@@ -715,6 +754,7 @@
 				1893EF0F22CCA32800A02323 /* NSSafeMutableArray.m in Sources */,
 				2724A7F621F9A6D800376E0C /* TestMsgSend.m in Sources */,
 				18988BB92243386400D2E0FB /* TestThreadQAController.m in Sources */,
+				186FCED422E169CA004BBB68 /* SYRunloopHandler.m in Sources */,
 				2726BA3C21CBB54500ECE464 /* ViewController.m in Sources */,
 				18C8C4FF2265D91C00DD0B12 /* People.m in Sources */,
 				18C8C5052265D9C000DD0B12 /* People+A.m in Sources */,
@@ -734,7 +774,9 @@
 				2724A7E321F6BD2200376E0C /* ClassB.m in Sources */,
 				18988BB42241E4CD00D2E0FB /* NSObject+DLIntrospection.m in Sources */,
 				18988BB0223E423400D2E0FB /* TestRunloopController.m in Sources */,
+				186FCEE422E1D93E004BBB68 /* Student+D.m in Sources */,
 				2724A7F121F994F500376E0C /* TestSingletonObj.m in Sources */,
+				186FCED722E1C1D2004BBB68 /* GCDTimerManager.m in Sources */,
 				2724A7E021F6BD1400376E0C /* ClassA.m in Sources */,
 				2726BA3921CBB54500ECE464 /* AppDelegate.m in Sources */,
 				1893EF1822DD6EEA00A02323 /* TestBasePointController.m in Sources */,

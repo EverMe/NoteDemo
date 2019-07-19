@@ -21,4 +21,8 @@
 
 }
 
+- (void)see{
+    NSLog(@"People see -- %@",self.class);
+}
+
 @end

@@ -273,5 +273,22 @@ static void getSuper(Class class, NSMutableString *result) {
     } else {
         method_exchangeImplementations(originalMethod, swizzledMethod);
     }
+    
+    /**
+     先尝试Add的原因解析 : 再判断add成功与否 时交换还是替换
+     UIViewcontroller  ChildViewControler
+    
+     在 ChildViewControler + A 分类中写了hook_viewWillAppear:
+     当尝试hook viewWillAppear方法时，如果ChildVC未重写此方法，如果直接交换 就会hook到UIViewcontroller的原方法
+     当UIViewcontroller调用viewWillAppear时，会调用hook_viewWillAppear： 而hook_viewWillAppear方法的最后一句还是调用hook_viewWillAppear
+     但是hook_viewWillAppear存在于ChildViewControler中，所以父类UIViewcontroller无法找到 导致崩溃
+     
+     所以交换方法时，需保证两个方法调用的类相同
+     
+     具体理解可看Student+D
+     
+    */
+    
+    
 }
 @end

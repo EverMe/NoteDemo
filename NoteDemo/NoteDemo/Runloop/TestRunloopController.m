@@ -22,13 +22,25 @@
     // Do any additional setup after loading the view from its nib.
     
     _num = 1;
+    
+    [self addRunloopObserver];
+}
+
+//手动停止runloop
+- (void)stopRunloop{
+    
+    //https://www.jianshu.com/p/24f875775336    //三种启动RunLoop方式
+    //https://www.jianshu.com/p/8e6d51f69ca3    //手动停止runloop
+    
+    CFRunLoopStop([NSRunLoop currentRunLoop].getCFRunLoop);
+    
 }
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
     
     //1.创建常驻线程 : 开启自线程的Runloop
-    self.thread = [[NSThread alloc] initWithTarget:self selector:@selector(createAliveChildThread) object:nil];
-    [self.thread start];
+//    self.thread = [[NSThread alloc] initWithTarget:self selector:@selector(createAliveChildThread) object:nil];
+//    [self.thread start];
 
     //2.
     
@@ -59,26 +71,35 @@
     
     //    NSTimer *timer = [NSTimer scheduledTimerWithTimeInterval:2.0 target:self selector:@selector(test) userInfo:nil repeats:YES];
     //    [[NSRunLoop currentRunLoop] addTimer:timer forMode:NSDefaultRunLoopMode];
-    
-    
-    CFRunLoopObserverRef ref = CFRunLoopObserverCreateWithHandler(CFAllocatorGetDefault(), kCFRunLoopAllActivities, YES, 0, ^(CFRunLoopObserverRef observer, CFRunLoopActivity activity) {
+    [self addRunloopObserver];
+}
+
+- (void)addRunloopObserver{
+    //kCFRunLoopAllActivities
+    CFRunLoopObserverRef observer = CFRunLoopObserverCreateWithHandler(CFAllocatorGetDefault(), kCFRunLoopBeforeWaiting, YES, 0, ^(CFRunLoopObserverRef observer, CFRunLoopActivity activity) {
+        
+        if (CFRunLoopGetCurrent() ==  CFRunLoopGetMain() ) {
+            NSLog(@"********MainLoop********");
+        }
+        
+        
         switch (activity) {
-                case kCFRunLoopEntry:
+            case kCFRunLoopEntry:
                 NSLog(@"RunLoop进入");
                 break;
-                case kCFRunLoopBeforeTimers:
+            case kCFRunLoopBeforeTimers:
                 NSLog(@"RunLoop要处理Timers了");
                 break;
-                case kCFRunLoopBeforeSources:
+            case kCFRunLoopBeforeSources:
                 NSLog(@"RunLoop要处理Sources了");
                 break;
-                case kCFRunLoopBeforeWaiting:
+            case kCFRunLoopBeforeWaiting:
                 NSLog(@"RunLoop要休息了");
                 break;
-                case kCFRunLoopAfterWaiting:
+            case kCFRunLoopAfterWaiting:
                 NSLog(@"RunLoop醒来了");
                 break;
-                case kCFRunLoopExit:
+            case kCFRunLoopExit:
                 NSLog(@"RunLoop退出了");
                 break;
                 
@@ -87,10 +108,12 @@
         }
     });
     
-    CFRunLoopAddObserver(CFRunLoopGetCurrent(), ref, kCFRunLoopDefaultMode);
-    [[NSRunLoop currentRunLoop] run];
-    CFRelease(ref);
+    CFRunLoopAddObserver(CFRunLoopGetCurrent(), observer, kCFRunLoopDefaultMode);
+//    [[NSRunLoop currentRunLoop] run];
+    CFRelease(observer);
+    
 }
+
 
 - (IBAction)btnclick:(id)sender {
     
