@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		171E0C2EB1156B670CC8B37D /* Pods_NoteDemoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C38585016A4B417E39658F87 /* Pods_NoteDemoUITests.framework */; };
+		181718A52317A249007C4D17 /* Associate实现.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 181718A42317A249007C4D17 /* Associate实现.rtf */; };
 		186FCECD22DF05F3004BBB68 /* isa_meta.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 186FCECC22DF05F3004BBB68 /* isa_meta.jpg */; };
 		186FCED122DF0EFB004BBB68 /* readme.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 186FCED022DF0EFB004BBB68 /* readme.rtf */; };
 		186FCED422E169CA004BBB68 /* SYRunloopHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 186FCED322E169CA004BBB68 /* SYRunloopHandler.m */; };
@@ -87,6 +88,7 @@
 /* Begin PBXFileReference section */
 		03048DAFC3D28805B1E4AFC0 /* Pods-NoteDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NoteDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NoteDemo/Pods-NoteDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		05D1B52878C28C4C371CACCF /* Pods-NoteDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NoteDemoTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-NoteDemoTests/Pods-NoteDemoTests.release.xcconfig"; sourceTree = "<group>"; };
+		181718A42317A249007C4D17 /* Associate实现.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = "Associate实现.rtf"; sourceTree = "<group>"; };
 		186FCECC22DF05F3004BBB68 /* isa_meta.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = isa_meta.jpg; sourceTree = "<group>"; };
 		186FCED022DF0EFB004BBB68 /* readme.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = readme.rtf; sourceTree = "<group>"; };
 		186FCED222E169CA004BBB68 /* SYRunloopHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SYRunloopHandler.h; sourceTree = "<group>"; };
@@ -215,6 +217,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		181718A32317A08E007C4D17 /* Associate */ = {
+			isa = PBXGroup;
+			children = (
+				181718A42317A249007C4D17 /* Associate实现.rtf */,
+			);
+			path = Associate;
+			sourceTree = "<group>";
+		};
 		186FCECE22DF0EA4004BBB68 /* Https */ = {
 			isa = PBXGroup;
 			children = (
@@ -313,6 +323,7 @@
 		18C8C4FC2265D90200DD0B12 /* Runtime */ = {
 			isa = PBXGroup;
 			children = (
+				181718A32317A08E007C4D17 /* Associate */,
 				18C8C517226730D500DD0B12 /* Timer */,
 				18C8C5092265DC3300DD0B12 /* hook */,
 			);
@@ -638,6 +649,7 @@
 				2724A7F321F9A25000376E0C /* Readme.md in Resources */,
 				18988BAB223E36DC00D2E0FB /* TestGCDViewController.xib in Resources */,
 				2726BA4121CBB54700ECE464 /* Assets.xcassets in Resources */,
+				181718A52317A249007C4D17 /* Associate实现.rtf in Resources */,
 				186FCECD22DF05F3004BBB68 /* isa_meta.jpg in Resources */,
 				2724A7FF21F9CE5800376E0C /* lock.jpg in Resources */,
 				186FCED122DF0EFB004BBB68 /* readme.rtf in Resources */,
